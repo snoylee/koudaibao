@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/abouttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/aboutlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/abouttitle" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="问题"
+            android:textColor="@color/global_black_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/aboutcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="口袋理财"
+            android:textColor="@color/global_label_color"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divide_line_height"
+            android:layout_below="@id/aboutcontent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/selfcenter_divide_line_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aboutlayout" >
+
+       <RelativeLayout
+            android:id="@+id/abouttelelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             >
+
+            <TextView
+            android:id="@+id/abouttele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="客服电话："
+            android:textColor="@color/global_black_color"
+            android:textSize="14sp" />
+            <TextView
+                android:id="@+id/abouttele_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/abouttele"
+                android:layout_toRightOf="@id/abouttele"
+                android:text="400-002-0802"
+                android:textColor="@color/global_red_color"
+                android:textSize="14sp" />
+        </RelativeLayout> 
+        
+        <TextView
+            android:id="@+id/aboutaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/abouttelelayout"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="公司地址"
+            android:textColor="@color/global_black_color"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/sitelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aboutaddress" >
+
+            <TextView
+                android:id="@+id/aboutsitename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="网站地址："
+                android:textColor="@color/global_black_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/aboutsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/aboutsitename"
+                android:layout_toRightOf="@id/aboutsitename"
+                android:text="地址"
+                android:textColor="@color/global_red_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+<!--         <RelativeLayout
+            android:id="@+id/aboutcitelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sitelayout" >
+
+            <TextView
+                android:id="@+id/aboutcitename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="官方邮箱："
+                android:textColor="@color/global_black_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/aboutcite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/aboutcitename"
+                android:layout_toRightOf="@id/aboutcitename"
+                android:text="邮箱"
+                android:textColor="@color/global_red_color"
+                android:textSize="14sp" />
+        </RelativeLayout> -->
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gesture_bg" >
+
+  <RelativeLayout 
+      android:id="@+id/gesturelayout"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true">
+    <TextView
+        android:id="@+id/text_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/set_gesture_pattern"
+        android:textColor="#ffece5"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:id="@+id/gesture_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_tip"
+        android:layout_gravity="center_horizontal"      
+        android:layout_marginTop="20dip" >
+    </FrameLayout>
+ 
+   <RelativeLayout 
+       android:id="@+id/text_layout"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="20dip"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@id/gesture_container">
+    <TextView
+        android:id="@+id/text_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:text="@string/set_gesture_pattern_reason"
+        android:textColor="#ddab8d"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/text_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@id/text_reset"
+        android:paddingTop="10dp"
+        android:text="重新设置手势密码"
+        android:textColor="#ddab8d"
+        android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>
+</RelativeLayout>

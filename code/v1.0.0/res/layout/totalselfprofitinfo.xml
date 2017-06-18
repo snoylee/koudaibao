@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/global_click_selector" >
+
+    <RelativeLayout
+        android:id="@+id/totallistview"
+        android:layout_width="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/k_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="口袋宝"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/profitsAccount"
+            android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="10.00"
+            android:textColor="#000000"
+            android:textSize="16sp" /> 
+       <View
+	    android:id="@+id/view_line"
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/divide_line_height"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/global_line_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

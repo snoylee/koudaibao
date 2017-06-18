@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kdkj.koudailicai.lib.ui.RelativeLayout.ResizeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/withdrawParentView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/withdrawtitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/withdrawtitle"
+        android:background="@color/global_back_black_color"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/withtop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/withdrawhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/shapestroke" >
+
+                    <ImageView
+                        android:id="@+id/withdrawicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="49dp" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/withdrawicon" >
+
+                        <TextView
+                            android:id="@+id/withdrawname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="**银行"
+                            android:textColor="#000000"
+                            android:textSize="28sp" />
+
+                        <TextView
+                            android:id="@+id/withdrawlastnumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/withdrawname"
+                            android:layout_below="@+id/withdrawname"
+                            android:text="尾号****"
+                            android:textColor="#000000"
+                            android:textSize="24sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/candrawlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/withdrawhead"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/canwithdraw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:text="您可提现金额"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/candrawmoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="#ff0000"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tixianjine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/candrawlayout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="提现金额"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/edittixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/tixianjine"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext"
+                    android:inputType="numberDecimal"
+                    android:maxLength="11"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/jiaoyipassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edittixian"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="交易密码"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/editpasslayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@id/jiaoyipassword"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" >
+
+                    <EditText
+                        android:id="@+id/editpassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bg_edittext"
+                        android:inputType="textPassword"
+                        android:maxLength="6"
+                        android:paddingLeft="10dp" />
+                    
+                    <TextView
+                        android:id="@+id/lostpassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignRight="@id/editpassword"
+                        android:gravity="center"
+                        android:minWidth="60dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="忘记密码"
+                        android:textColor="@color/global_label_color"
+                        android:textSize="@dimen/global_text_size" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:layout_toLeftOf="@id/lostpassword"
+                        android:background="@color/global_line_weight_color" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/buttontixian"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_below="@id/editpasslayout"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/btn_grey_background"
+                    android:gravity="center"
+                    android:text="提现"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/global_btn_text_size" />
+
+                <TextView
+                    android:id="@+id/tixianword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/buttontixian"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="提现需要T+1个工作日到账，遇节假日顺延，注意查收。"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/withdrawlayout"
+                layout="@layout/network_disabled" />
+        </RelativeLayout>
+    </ScrollView>
+
+</com.kdkj.koudailicai.lib.ui.RelativeLayout.ResizeRelativeLayout>

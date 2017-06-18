@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <com.kdkj.koudailicai.lib.ui.RemainTitleView
+        android:id="@+id/accountremaintitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <com.kdkj.koudailicai.lib.ui.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/accountremainrefreshroot"
+        android:background="@color/global_back_black_color"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/accountremaintitle"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:id="@+id/accountRemainlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/accountremain"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#ffffff" >
+
+                <TextView
+                    android:id="@+id/remain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:text="余额（元）"
+                    android:textSize="20sp" />
+
+                <com.kdkj.koudailicai.lib.ui.NumChangeTextView
+                    android:id="@+id/remaindermoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/remain"
+                    android:layout_marginRight="20dp"
+                    android:text="0.00"
+                    android:textColor="@color/reminder_color"
+                    android:textSize="@dimen/total_profit" />
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divide_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/global_line_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/usablemoney"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/accountremain" >
+
+                <TextView
+                    android:id="@+id/usablename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/usablename"
+                    android:textColor="@color/selfcenter_global_text_color"
+                    android:textSize="@dimen/global_text_size" />
+
+                <com.kdkj.koudailicai.lib.ui.NumChangeTextView
+                    android:id="@+id/usmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="0.00"
+                    android:textColor="@color/transparent"
+                    android:textSize="18sp" />
+
+              <View
+                    android:id="@+id/view_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divide_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/global_line_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/withdrawingmoney"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/usablemoney" >
+
+                <TextView
+                    android:id="@+id/withdrawingname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/withdrawingname"
+                    android:textColor="@color/selfcenter_global_text_color"
+                    android:textSize="@dimen/global_text_size" />
+
+                <com.kdkj.koudailicai.lib.ui.NumChangeTextView
+                    android:id="@+id/withmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:text="0.00"
+                    android:textColor="@color/transparent"
+                    android:textSize="18sp" />
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/divide_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/global_line_color" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </com.kdkj.koudailicai.lib.ui.pulltorefresh.PullToRefreshScrollView>
+	<include
+        android:id="@+id/errNetLayout"
+    	android:layout_below="@id/accountremaintitle"        
+   		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/global_back_black_color" 
+	    android:visibility="gone"       
+        layout="@layout/network_disabled" />
+</RelativeLayout>

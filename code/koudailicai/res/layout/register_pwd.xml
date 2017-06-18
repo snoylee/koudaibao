@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+   
+    <RelativeLayout
+        android:id="@+id/rl_verification"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp" >
+
+        <EditText
+            android:id="@+id/et_verification"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/register_verification"
+            android:inputType="number"
+            android:textColor="@color/global_black_color"
+		    android:textSize="16sp"
+            android:maxLength="6" 
+            android:paddingLeft="40dp"/>
+        <ImageView
+            android:id="@+id/logininbutton"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@id/et_verification"
+            android:layout_centerInParent="true"
+            android:background="@drawable/loginbutton"
+            android:gravity="center"
+            android:src="@drawable/message_x" />
+
+        <TextView
+            android:id="@+id/tv_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:hint="@string/register_obtain_verification"
+            android:layout_alignRight="@id/et_verification"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+		/>
+        
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_alignRight="@id/tv_verification"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="65dp"
+            android:background="#999999" />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_verification"
+        android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/invest_btn_margin_top" >
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/register_password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:minEms="6"
+            android:textColor="@color/global_black_color"
+		    android:textSize="16sp"
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"/>
+         <ImageView
+            android:id="@+id/iv_password"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@id/et_password"
+            android:background="@drawable/loginbutton"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:src="@drawable/key_x" />
+         <ImageView
+            android:id="@+id/iv_password_see"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@id/et_password"
+            android:background="@drawable/loginbutton"
+            android:gravity="center"
+            android:src="@drawable/see_unpressed" />
+
+    </RelativeLayout>
+   <RelativeLayout
+		android:id="@+id/rl_agreement"
+		android:layout_below="@id/rl_password"
+		android:layout_width="wrap_content"
+		android:layout_height="25dp"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="20dp"
+		android:layout_alignParentLeft="true">
+		<CheckBox
+		    android:id="@+id/cb_agreement"
+		    android:layout_width="18dp"
+		    android:layout_height="18dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:background="@drawable/x_checkbox_filter"  
+		    android:button="@null"
+		    android:checked="true" />
+		<TextView 
+			android:id="@+id/tv_agreement"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_toRightOf="@id/cb_agreement"
+			android:layout_marginLeft="@dimen/invest_time_label_margin_top"
+			android:layout_centerVertical="true"
+			android:text="我同意《平台使用协议》《账户使用协议》"
+			android:textSize="@dimen/global_text_size"
+			android:textColor="@color/global_label_color" />				    
+	</RelativeLayout>
+	<RelativeLayout
+	    android:id="@+id/rl_submit"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/rl_agreement"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="@dimen/invest_btn_margin_top" >
+
+		<TextView
+	        android:id="@+id/tv_submit"
+	        android:layout_height="50dp"
+	        android:layout_width="fill_parent"
+	        android:layout_centerVertical="true"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:background="@drawable/btn_grey_background"        
+	        android:text="@string/register_submit"
+	        android:textColor="@color/global_white_color"
+	        android:textSize="22sp" />
+	</RelativeLayout>
+	<RelativeLayout
+	    android:id="@+id/rl_logo"
+		android:layout_below="@id/rl_submit"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_marginBottom="50dp"
+		>
+		<View
+			android:id="@+id/view_logo"  
+			android:layout_alignParentBottom="true"
+			android:paddingBottom="80dp"
+	        android:layout_width="200dp"  
+	        android:layout_height="100dp" 
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/logo"/> 
+	</RelativeLayout>
+</RelativeLayout>

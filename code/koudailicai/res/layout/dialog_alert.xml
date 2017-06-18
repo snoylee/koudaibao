@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/dialog_view"
+	android:background="@drawable/dialog_back"
+	android:layout_gravity="center"
+	android:orientation="vertical"
+	android:paddingLeft="15dp"
+	android:paddingRight="15dp"
+	android:paddingBottom="15dp"
+	android:layout_height="wrap_content" 
+	android:layout_width="wrap_content">
+
+  	
+	<!-- 正文内容 -->
+
+    <TextView
+        android:id="@+id/contentView"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+	    android:layout_gravity="center_horizontal"
+        android:gravity="center|left"
+        android:textColor="@color/global_black_color"
+        android:textSize="@dimen/global_mid_text_size" />
+
+	<TextView
+	    android:id="@+id/btnRight"
+ 		android:background="@drawable/selector_dialog_defalut_focused"
+		android:layout_width="260dp"
+	    android:layout_height="35dp"
+	    android:gravity="center"
+	    android:text="@string/btn_ok_text"
+	    android:textColor="@color/global_white_color"
+	    android:textSize="@dimen/global_mid_text_size" />
+	
+</LinearLayout>

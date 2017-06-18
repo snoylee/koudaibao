@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+     <com.kdkj.koudailicai.lib.ui.TitleView
+      android:id="@+id/title"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"/> 
+     
+ 	<RelativeLayout
+	 android:id="@+id/rl_set_trading"
+	 android:layout_width="fill_parent"
+	 android:layout_height="60dp"
+	 android:layout_below="@id/title"
+	 android:background="@color/global_back_black_color" >
+	 <RelativeLayout
+		android:id="@+id/rl_set_trading_image"
+		android:layout_width="wrap_content"
+		android:layout_height="60dp"
+		android:layout_marginLeft="20dp"
+		android:layout_alignParentLeft="true" >
+	 <ImageView 
+		android:id="@+id/iv_key"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerVertical="true"
+		android:layout_centerInParent="true"
+		android:src="@drawable/info_x"
+		
+		/>
+	</RelativeLayout>
+   <RelativeLayout 
+     android:id="@+id/ri_trading_prompt"
+     android:layout_width="fill_parent"
+     android:layout_height="60dp"
+     android:layout_marginLeft="10dp"
+     android:layout_marginRight="20dp"
+     android:layout_toRightOf="@id/rl_set_trading_image"
+     >
+    <TextView
+       android:id="@+id/tv_set_trading_prompt"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       android:text="请设置交易密码以保障您的每一笔资金变动的安全"
+       android:textSize="@dimen/global_text_size"
+       android:gravity="center_vertical"
+       android:textColor="@color/global_black_color"
+       android:layout_centerVertical="true"/>
+	 </RelativeLayout>
+	 <View
+	   android:layout_width="fill_parent"
+	   android:layout_height="@dimen/divide_line_height"
+	   android:layout_alignParentBottom="true"
+	   android:background="@color/selfcenter_divide_line_color" />
+	</RelativeLayout>
+      
+    <RelativeLayout
+        android:id="@+id/rl_set_trading_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_set_trading"
+         >
+        <EditText
+            android:id="@+id/et_set_trading_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/global_white_color"
+            android:hint="请输入交易密码"
+            android:textColor="@color/global_black_color"
+		    android:textSize="@dimen/register_number"
+		    android:inputType="number"
+		    android:password="true"
+            android:maxLength="6" 
+            android:singleLine="true" 
+            android:paddingLeft="20dp"/>    
+     <View
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/divide_line_height"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/selfcenter_divide_line_color" />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_set_trading_password_again"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_set_trading_password"
+         >
+        <EditText
+            android:id="@+id/et_set_trading_password_again"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@color/global_white_color"
+            android:hint="请确认交易密码"
+            android:inputType="number"
+            android:password="true"
+            android:textColor="@color/global_black_color"
+		    android:textSize="@dimen/register_number"
+            android:maxLength="6" 
+            android:singleLine="true" 
+            android:paddingLeft="20dp"/>    
+     <View
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/divide_line_height"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/selfcenter_divide_line_color" />
+    </RelativeLayout>
+    
+		
+	<TextView
+	      android:id="@+id/et_set_trading_prompt"
+	      android:layout_height="wrap_content"
+	      android:layout_width="wrap_content"
+	      android:layout_centerHorizontal="true"
+	      android:layout_marginLeft="@dimen/invest_margin_left"
+	   	  android:layout_marginRight="@dimen/invest_margin_left"
+	      android:layout_marginTop="10dp" 
+	      android:layout_below="@id/rl_set_trading_password_again"
+	      android:gravity="center_vertical|left"
+	      android:text="密码需由6位数的数字组成"
+	      android:textColor="@color/global_black_color"
+	      android:textSize="@dimen/register_number" />
+	
+	<RelativeLayout
+	    android:id="@+id/rl_set_trading_complete"
+	    android:layout_width="fill_parent"
+	    android:layout_height="50dp"
+	    android:layout_below="@id/et_set_trading_prompt"
+	    android:layout_marginLeft="@dimen/invest_margin_left"
+	    android:layout_marginRight="@dimen/invest_margin_left"
+	    android:layout_marginTop="10dp" >
+
+		<TextView
+	        android:id="@+id/tv_set_trading_complete"
+	        android:layout_height="50dp"
+	        android:layout_width="fill_parent"
+	        android:layout_centerVertical="true"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:background="@drawable/btn_grey_background"        
+	        android:text="@string/complete"
+	        android:textColor="@color/global_white_color"
+	        android:textSize="@dimen/global_btn_text_size" />
+	</RelativeLayout>    
+
+</RelativeLayout>

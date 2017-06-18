@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b0000000"
+    android:id="@+id/rl" >
+    <TextView
+	    android:id="@+id/tv_prompt_register"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dp"
+	    android:layout_margin="10dp"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/btn_red_background"
+	    android:gravity="center"
+	    android:text="立即注册"
+	    android:textColor="@color/global_white_color"
+	    android:textSize="@dimen/global_btn_text_size" />
+   	<RelativeLayout 
+        android:id="@+id/rl_prompt_total"
+        android:layout_above="@id/tv_prompt_register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/global_white_color"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"  >
+      	<TextView 
+			android:id="@+id/tv_prompt_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="20dp"
+			android:text="平台风险保证金"
+			android:textSize="22sp"
+			android:textColor="#333333"
+			android:layout_centerHorizontal="true" />
+
+		<TextView 
+            android:id="@+id/tv_prompt_digital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+			android:layout_below="@id/tv_prompt_title"		    
+            android:text="10,000,000"
+            android:textSize="35sp"
+            android:textColor="#ff0000"
+            />
+      	<TextView
+		    android:id="@+id/tv_prompt_money"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBottom="@id/tv_prompt_digital"
+            android:layout_toLeftOf="@id/tv_prompt_digital"
+			android:text="￥"
+		    android:textColor="#ff0000"
+		    android:textSize="16sp" />		
+        <ImageView 
+            android:id="@+id/iv_prompt_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tv_prompt_digital"
+            android:src="@drawable/banklogo_x"
+            />
+        <TextView
+	        android:id="@+id/tv_lookng"
+	        android:layout_height="35dp"
+	        android:layout_width="fill_parent"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginRight="30dp"
+	        android:layout_marginTop="20dp"
+	        android:gravity="center"
+	        android:layout_below="@+id/iv_prompt_image"
+	        android:background="@drawable/btn_blue_background"        
+	        android:text="点击查看"
+	        android:textColor="@color/global_white_color"
+	        android:textSize="@dimen/invest_global_text_size" />
+         <ImageView
+            android:id="@+id/iv_prompt_jianguan"  
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/stamp_x"
+            android:layout_alignBottom="@id/tv_lookng"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            />
+     </RelativeLayout>
+</RelativeLayout>

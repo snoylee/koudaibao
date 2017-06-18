@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/aclayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/global_white_color" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/acimage"
+            android:layout_width="700dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/actime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/acimage"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2014-11-03 9:00"
+            android:textColor="@color/global_label_color"
+            android:textSize="@dimen/global_text_size" />
+
+        <TextView
+            android:id="@+id/acname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actime"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="我们有业界领先的安全技术"
+            android:textColor="@color/global_black_color"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/divide_line_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/global_line_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/messlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:background="@color/global_white_color" >
+
+        <TextView
+            android:id="@+id/messtime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="2014-11-03 9:00"
+            android:textColor="@color/global_label_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/messinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/messtime"
+            android:layout_alignLeft="@id/messtime"
+            android:layout_marginRight="10dp"
+            android:text="123"
+            android:textSize="@dimen/global_text_size"
+            android:textColor="@color/global_black_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

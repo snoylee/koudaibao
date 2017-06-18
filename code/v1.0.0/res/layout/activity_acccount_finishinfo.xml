@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/accountlistview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/global_click_selector" >
+
+        <RelativeLayout
+            android:id="@+id/Leftlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp" 
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/accountfinished"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="口袋宝"
+                android:textColor="@color/trasaction_record_text_nomarl_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/updated_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignLeft="@id/accountfinished"
+                android:layout_below="@id/accountfinished"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="0:00"
+                android:textColor="@color/global_label_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Rightlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" 
+            android:paddingTop="12dp">
+
+            <TextView
+                android:id="@+id/finishmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0.00"
+                android:textColor="@color/trasaction_record_text_nomarl_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/status_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/finishmoney"
+                android:layout_below="@id/finishmoney"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="成功转让"
+                android:textColor="@color/global_label_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/divide_line_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/global_line_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

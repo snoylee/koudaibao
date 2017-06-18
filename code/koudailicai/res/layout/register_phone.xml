@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <RelativeLayout
+		    android:id="@+id/register_phone"
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:layout_marginTop="50dp" 
+		    android:layout_below="@id/title">
+			
+		<EditText
+	        android:id="@+id/et_phone_number"
+	        android:layout_height="50dp"
+	        android:layout_width="fill_parent"
+	        android:layout_centerHorizontal="true"
+	        android:inputType="phone"
+	        android:maxLength="11"
+	        android:paddingLeft="35dp"
+	        android:hint="@string/register_phone"
+	        android:gravity="center_vertical|left"
+        	android:background="@drawable/bg_edittext"        
+	        android:textColor="@color/global_black_color"
+	        android:textSize="16sp" />
+		<ImageView
+            android:id="@+id/logininbutton"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_alignLeft="@id/et_phone_number"
+            android:background="@drawable/loginbutton"
+            android:gravity="center"
+            android:src="@drawable/key_x" />
+	    </RelativeLayout>
+    	<RelativeLayout
+		    android:id="@+id/rl_next"
+		    android:layout_width="fill_parent"
+		    android:layout_height="50dp"
+		    android:layout_below="@id/register_phone"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+		    android:layout_marginTop="@dimen/invest_btn_margin_top" >
+
+		<TextView
+	        android:id="@+id/tv_next"
+	        android:layout_height="50dp"
+	        android:layout_width="fill_parent"
+	        android:layout_centerVertical="true"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:background="@drawable/btn_grey_background"        
+	        android:text="@string/invest_next_label"
+	        android:textColor="@color/global_white_color"
+	        android:textSize="22sp" />
+	    </RelativeLayout>	
+	    
+    	<RelativeLayout
+   	    	android:id="@+id/rl_logo"
+		    android:layout_below="@id/rl_next"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			android:layout_marginBottom="50dp">
+		<View
+			android:id="@+id/view_logo"  
+			android:layout_alignParentBottom="true"
+			android:paddingBottom="80dp"
+            android:layout_width="200dp"  
+            android:layout_height="100dp" 
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/logo"/> 
+		</RelativeLayout>
+
+</RelativeLayout>

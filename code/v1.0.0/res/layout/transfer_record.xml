@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_back_black_color" >
+	
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+   
+	<com.kdkj.koudailicai.lib.ui.pulltorefresh.PullToRefreshListView
+        android:id="@+id/transfer_record_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    	android:layout_below="@id/title"
+    	android:divider="@null"
+    	android:scrollbars="none"
+        android:background="@color/global_back_black_color" />
+	
+	<include
+        android:id="@+id/errNetLayout"
+    	android:layout_below="@id/title"        
+   		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/global_back_black_color" 
+	    android:visibility="gone"       
+        layout="@layout/network_disabled" />
+	    
+</RelativeLayout>

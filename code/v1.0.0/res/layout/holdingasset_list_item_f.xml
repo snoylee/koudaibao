@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- com.kdkj.koudailicai.lib.ui.NumChange -->
+<RelativeLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/global_white_color" >
+   	<RelativeLayout
+   	    android:layout_below="@id/title"
+   	    android:id="@+id/holdingTopView"
+   	    android:paddingLeft="@dimen/holding_asset_size"
+   	    android:paddingTop="15dp"
+   	    android:paddingRight="@dimen/holding_asset_size"
+   	    android:paddingBottom="30dp"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="wrap_content" >
+        <TextView 
+           	android:id="@+id/holding_asset"
+           	android:layout_width="wrap_content"
+   			android:layout_height="wrap_content"
+   			android:layout_alignParentTop="true"
+   			android:textSize="@dimen/holding_base_hoid_size"
+   			android:text="@string/holding_asset_profits_lable_text" />
+        <com.kdkj.koudailicai.lib.ui.NumChangeTextView
+            android:id="@+id/holding_asset_money"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/holding_asset_money_size"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/holding_right_lable_aseet"
+            android:textColor="@color/holdingassets_lastday_profit_back_color" />
+	</RelativeLayout>
+    <View 
+        android:id="@+id/liveone"
+        android:layout_below="@id/holdingTopView"			
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divide_line_height"
+        android:background="@color/global_line_color" />
+    <RelativeLayout
+        android:id="@+id/kdbInfoView"  
+      	android:layout_below="@id/liveone"
+        android:layout_width="fill_parent"
+		android:layout_height="60dp"
+		android:paddingLeft="@dimen/holding_asset_size"
+		android:paddingRight="@dimen/holding_asset_size"
+		android:gravity="center_vertical"
+		android:background="@color/global_back_black_color" >
+		<RelativeLayout
+		    android:id="@+id/kdbTotalView"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content" >
+			<TextView
+			    android:id="@+id/total_holding_asset"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"
+			    android:text="@string/total_name"
+			    android:textColor="@color/holding_asset_text_size_color"
+			    android:textSize="@dimen/holding_base_size" />
+	        <TextView
+	            android:id="@+id/pay_out"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:paddingLeft="10dp"
+	            android:paddingRight="10dp"
+	            android:background="@color/global_red_color"
+	            android:textSize="@dimen/holding_base_size"
+	            android:textColor="@android:color/white"
+	            android:text="@string/roll_out" />
+        </RelativeLayout>
+       	<RelativeLayout
+       	    android:layout_below="@id/kdbTotalView"
+       	    android:layout_marginTop="2dp"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content" >
+			<TextView 
+			    android:id="@+id/pay_holding_asset_money"
+	            android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:textSize="@dimen/holding_base_size"
+				android:layout_alignParentLeft="true"			
+				android:textColor="@color/holding_asset_text_size_color"
+				android:text="@string/investment"/>
+			
+			<TextView
+	            android:id="@+id/total_holding_asset_money"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_alignParentRight="true"
+	            android:text="0.00" 
+	            android:textSize="@dimen/no_income_size_xxlarg"
+	            android:textColor="@color/holding_asset_text_size_one_color"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+   	<View 
+		android:layout_below="@id/kdbInfoView"			
+		android:layout_width="fill_parent"
+		android:id="@+id/livetwo"
+		android:layout_height="@dimen/divide_line_height"
+		android:background="@color/global_line_color" />
+	<RelativeLayout
+	    android:id="@+id/holdingDueinCapitalView" 
+       	android:layout_below="@id/livetwo"
+        android:layout_width="fill_parent"
+		android:layout_height="100dp"
+		android:paddingLeft="@dimen/holding_asset_size"
+		android:paddingRight="@dimen/holding_asset_size"
+		android:background="@color/global_back_black_color"
+		android:gravity="center_vertical" >
+       	<RelativeLayout
+       	    android:id="@+id/wait_view"
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content" >
+			<TextView
+			    android:id="@+id/wait_collection"  
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:textSize="@dimen/holding_base_size"
+				android:textColor="@color/holding_asset_text_size_color"
+				android:text="@string/collection_base_money"/>
+			<TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	        	android:layout_alignParentRight="true"
+	        	android:id="@+id/wait_collection_money"
+	        	android:layout_alignBaseline="@id/wait_collection"
+	            android:text="0.00" 
+	            android:textSize="@dimen/no_income_size_xxlarg"
+	            android:textColor="@color/holding_asset_text_size_one_color"/>
+		</RelativeLayout>
+		<RelativeLayout
+       	    android:id="@+id/income_view"
+       	    android:layout_below="@id/wait_view"
+            android:layout_marginTop="5dp"       	    
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content" >
+			<TextView 
+	            android:id="@+id/no_income" 
+		        android:layout_centerVertical="true"            
+	            android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="@dimen/holding_base_size"
+				android:textColor="@color/holding_asset_text_size_color"
+				android:text="@string/no_income_money"/>
+			<TextView
+	            android:id="@+id/no_income_money"
+		        android:layout_centerVertical="true"            
+	            android:layout_alignParentRight="true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="0.00" 
+	            android:textSize="@dimen/no_income_size_xxlarg"
+	            android:textColor="@color/holding_asset_text_size_one_color"/>
+		</RelativeLayout>
+		<RelativeLayout
+       	    android:id="@+id/freeze_view"
+       	    android:layout_below="@id/income_view"
+            android:layout_marginTop="5dp"       	    
+		    android:layout_width="fill_parent"
+			android:layout_height="wrap_content" >		
+			<TextView 
+	            android:id="@+id/freeze_account_label" 
+	            android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"            				
+				android:textSize="@dimen/holding_base_size"
+				android:textColor="@color/holding_asset_text_size_color"
+				android:text="@string/freeze_account_label"/>
+			<TextView
+	            android:id="@+id/freeze_account"
+		        android:layout_centerVertical="true"            	            
+	            android:layout_alignParentRight="true"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="0.00" 
+	            android:textSize="@dimen/no_income_size_xxlarg"
+	            android:textColor="@color/holding_asset_text_size_one_color"/>
+		</RelativeLayout>		
+	</RelativeLayout>
+
+    <View 
+        android:id="@+id/livethree"
+        android:layout_below="@id/holdingDueinCapitalView"			
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divide_line_height"
+        android:background="@color/global_line_color" />
+	<View 
+	    android:id="@+id/bottomView"
+	    android:layout_below="@id/livethree"
+	    android:layout_width="match_parent"
+	    android:layout_height="15dp"
+	    android:background="@color/global_white_color"/>
+         <!-- <ListView 
+            android:id="@+id/holding_list"
+            android:layout_below="@id/livefour"
+            android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/> -->
+         
+</RelativeLayout>

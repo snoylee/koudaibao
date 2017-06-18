@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gesture_bg" >
+
+   <RelativeLayout 
+      android:id="@+id/gestureverify"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true">
+
+   <TextView
+        android:id="@+id/text_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="25734874634"
+        android:textColor="@color/gesture_top_label"
+        android:textSize="18sp" />
+   <TextView
+        android:id="@+id/text1_tip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/text_tip"
+        android:gravity="center_horizontal"
+        android:text="请输入原密码"
+        android:textColor="@color/gesture_top_label"
+        android:textSize="18sp" />
+    <FrameLayout
+        android:id="@+id/gesture_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_tip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/gesture_container" >
+
+        <TextView
+            android:id="@+id/text_forget_gesture"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="取消"
+            android:textColor="@color/gesture_bottom_label" />
+
+        <TextView
+            android:id="@+id/text_other_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="忘记手势"
+            android:textColor="@color/gesture_bottom_label" />
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

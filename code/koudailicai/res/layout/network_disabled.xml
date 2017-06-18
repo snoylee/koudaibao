@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:background="@color/global_back_black_color" >
+    <ImageView
+        android:id="@+id/networkimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/networkdisabled_icon" />
+    <TextView
+        android:id="@+id/networktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/networkimage"  
+        android:layout_centerHorizontal="true"              
+        android:text="无网络信号"
+        android:textColor="#c6c6c6"
+        android:textSize="25sp" />
+	<TextView
+        android:id="@+id/networkload"
+       	android:layout_below="@id/networktext"             
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/network_bg"
+        android:text="点击刷新"
+        android:textColor="#666666"
+        android:textSize="20sp" />
+</RelativeLayout>

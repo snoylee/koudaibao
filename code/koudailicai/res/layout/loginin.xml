@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/loginintitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/logininlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/loginintitle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp" >
+
+        <EditText
+            android:id="@+id/logininname"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/use"
+            android:drawablePadding="8dp"
+            android:paddingLeft="10dp"
+            android:textSize="@dimen/global_mid_text_size" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logininpass"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/logininlayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/logininpassword"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="请输入登录密码"
+            android:digits="@string/edittext_box"
+            android:password="true"
+            android:singleLine="true"
+            android:drawableLeft="@drawable/key"
+            android:drawablePadding="8dp"
+            android:paddingLeft="15dp"
+            android:textSize="@dimen/global_mid_text_size" />
+
+        <TextView
+            android:id="@+id/lostloginpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignRight="@id/logininpassword"
+            android:gravity="center"
+            android:minWidth="60dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="忘记密码"
+            android:textColor="@color/global_label_color"
+            android:textSize="@dimen/global_text_size" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_toLeftOf="@id/lostloginpassword"
+            android:background="@color/global_line_weight_color" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/buttonlogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/logininpass"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_grey_background"
+        android:gravity="center"
+        android:text="登  录"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/global_btn_text_size" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

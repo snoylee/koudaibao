@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/title_account_center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_account_center" >
+
+        <RelativeLayout
+            android:id="@+id/rl_account"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/global_click_selector" >
+
+            <ImageView
+                android:id="@+id/iv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/user_h" />
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_account"
+                android:text="@string/account_center_account"
+                android:textColor="@color/account_center_real_name"
+                android:textSize="@dimen/account_textsize_name" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/global_line_color" />
+
+            <TextView
+                android:id="@+id/tv_account_real"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:text="@string/account_center_account_real"
+                android:textColor="@color/account_center_real_account"
+                android:textSize="@dimen/account_textsize_account" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_realname"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_account"
+            android:background="@drawable/global_click_selector" >
+
+            <ImageView
+                android:id="@+id/iv_realname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/name_h" />
+
+            <TextView
+                android:id="@+id/tv_realname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_realname"
+                android:text="@string/account_center_username"
+                android:textColor="@color/account_center_real_name"
+                android:textSize="@dimen/account_textsize_name" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/global_line_color" />
+
+            <TextView
+                android:id="@+id/tv_realname_real"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/account_center_real_account"
+                android:textSize="@dimen/account_textsize_account" />
+
+            <RelativeLayout
+                android:id="@+id/namelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp" >
+
+                <TextView
+                    android:id="@+id/lost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="未认证"
+                    android:textColor="@color/account_center_real_account"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_realname_real"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/lost"
+                    android:src="@drawable/arrowright_x" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_id_number"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_realname"
+            android:background="@drawable/global_click_selector" >
+
+            <ImageView
+                android:id="@+id/iv_id_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/idcard_h" />
+
+            <TextView
+                android:id="@+id/tv_id_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_id_number"
+                android:text="@string/account_center_idcard"
+                android:textColor="@color/account_center_real_name"
+                android:textSize="@dimen/account_textsize_name" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/global_line_color" />
+
+            <TextView
+                android:id="@+id/tv_id_number_real"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/account_center_real_account"
+                android:textSize="@dimen/account_textsize_account" />
+
+            <RelativeLayout
+                android:id="@+id/numberlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp" >
+
+                <TextView
+                    android:id="@+id/numberlost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="未认证"
+                    android:textColor="@color/account_center_real_account"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_id_number_real"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/numberlost"
+                    android:src="@drawable/arrowright_x" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bank_card"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_id_number"
+            android:background="@drawable/global_click_selector" >
+
+            <ImageView
+                android:id="@+id/iv_bank_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/credit_card_h" />
+
+            <TextView
+                android:id="@+id/tv_bank_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_bank_card"
+                android:text="@string/account_center_bankcard"
+                android:textColor="@color/account_center_real_name"
+                android:textSize="@dimen/account_textsize_name" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/global_line_color" />
+
+            <TextView
+                android:id="@+id/tv_bank_card_real"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:textColor="@color/account_center_real_account"
+                android:textSize="@dimen/account_textsize_account" />
+
+            <RelativeLayout
+                android:id="@+id/cardlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp" >
+
+                <TextView
+                    android:id="@+id/cardlost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:text="未绑定"
+                    android:textColor="@color/account_center_real_account"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_bank_card_real"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/cardlost"
+                    android:src="@drawable/arrowright_x" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_key"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/rl_bank_card"
+            android:background="@color/global_white_color" >
+
+            <RelativeLayout
+                android:id="@+id/rl_key_image"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/iv_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/key_account_center_h" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_key_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/rl_key_image" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_key_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/global_click_selector" >
+
+                    <TextView
+                        android:id="@+id/tv_key_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/account_center_key_login"
+                        android:textColor="@color/account_center_real_name"
+                        android:textSize="@dimen/account_textsize_name" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divide_line_height"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/global_line_color" />
+
+                    <ImageView
+                        android:id="@+id/iv_key_login_real"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:src="@drawable/arrowright_x" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_key_trading"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/global_click_selector" >
+
+                    <TextView
+                        android:id="@+id/tv_key_trading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/account_center_key_trading"
+                        android:textColor="@color/account_center_real_name"
+                        android:textSize="@dimen/account_textsize_name" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divide_line_height"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/global_line_color" />
+
+                    <ImageView
+                        android:id="@+id/iv_key_trading_real"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:src="@drawable/arrowright_x" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/selfcenter_divide_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gestures_off"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rl_key"
+            android:background="@drawable/global_click_selector" >
+
+            <ImageView
+                android:id="@+id/iv_gestures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/gestruepassword_h" />
+
+            <TextView
+                android:id="@+id/tv_gestures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/iv_gestures"
+                android:text="@string/account_center_gestures"
+                android:textColor="@color/account_center_real_name"
+                android:textSize="@dimen/account_textsize_name" />
+
+            <RelativeLayout
+                android:id="@+id/rl_image_gestures_off"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp" >
+
+                <ImageView
+                    android:id="@+id/tv_gestures_off_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/switchoff_x" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_lock"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/rl_key"
+            android:background="@color/global_white_color" >
+
+            <RelativeLayout
+                android:id="@+id/rl_lock_image"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_alignParentLeft="true" >
+
+                <ImageView
+                    android:id="@+id/iv_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/gestruepassword_h" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_lock_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/rl_lock_image" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_gestures_on"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/global_click_selector" >
+
+                    <TextView
+                        android:id="@+id/tv_gestures_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/account_center_gestures"
+                        android:textColor="@color/account_center_real_name"
+                        android:textSize="@dimen/account_textsize_name" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divide_line_height"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/selfcenter_divide_line_color" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_image_gestures_on"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp" >
+
+                        <ImageView
+                            android:id="@+id/tv_gestures_on_circle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="12dp"
+                            android:background="@drawable/switchon_x" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_change"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/global_click_selector" >
+
+                    <TextView
+                        android:id="@+id/tv_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="修改手势密码"
+                        android:textColor="@color/account_center_real_name"
+                        android:textSize="@dimen/account_textsize_name" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/divide_line_height"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@color/selfcenter_divide_line_color" />
+
+                    <ImageView
+                        android:id="@+id/iv_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:src="@drawable/arrowright_x" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/selfcenter_divide_line_color" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

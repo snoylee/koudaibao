@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/moretitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/morelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moretitle"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/activecenter"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/global_click_selector" >
+
+            <ImageView
+                android:id="@+id/hdimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/moreicon1" />
+
+            <TextView
+                android:id="@+id/hdword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/hdimage"
+                android:text="@string/more_active_center"
+                android:textColor="@color/account_center_real_name"
+                android:textSize="@dimen/account_textsize_name" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentTop="true"
+                android:background="@color/global_line_color" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/global_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/messagecenter"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/activecenter"
+            android:background="@drawable/global_click_selector" >
+
+            <ImageView
+                android:id="@+id/messimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/risk_management" />
+
+            <TextView
+                android:id="@+id/hdword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/messimage"
+                android:text="@string/more_message_center"
+                android:textColor="@color/account_center_real_name"
+                android:textSize="@dimen/account_textsize_name" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/global_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/helpcenter"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/messagecenter"
+            android:background="@drawable/global_click_selector" >
+
+            <ImageView
+                android:id="@+id/helpimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/moreicon3" />
+
+            <TextView
+                android:id="@+id/helpword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/helpimage"
+                android:text="@string/more_help_center"
+                android:textColor="@color/account_center_real_name"
+                android:textSize="@dimen/account_textsize_name" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/global_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/checkupdate"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/helpcenter"
+            android:background="@drawable/global_click_selector" >
+
+            <ImageView
+                android:id="@+id/checkimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/moreicon4" />
+
+            <TextView
+                android:id="@+id/checkword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/checkimage"
+                android:text="@string/more_check_update"
+                android:textColor="@color/account_center_real_name"
+                android:textSize="@dimen/account_textsize_name" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/global_line_color" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/aboutkoudai"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/checkupdate"
+            android:background="@drawable/global_click_selector" >
+
+            <ImageView
+                android:id="@+id/aboutimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/moreicon5" />
+
+            <TextView
+                android:id="@+id/aboutword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/aboutimage"
+                android:text="@string/more_about_koudai"
+                android:textColor="@color/account_center_real_name"
+                android:textSize="@dimen/account_textsize_name" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/divide_line_height"
+                android:layout_alignParentBottom="true"
+                android:background="@color/global_line_color" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/morebottom"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_below="@id/morelayout" >
+
+        <RelativeLayout
+            android:id="@+id/tofriend"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_edittext_normal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/tofriendimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/red_icon1" />
+
+                    <TextView
+                        android:id="@+id/tofriendword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tofriendimage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/more_to_friend"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/tofriend"
+            android:layout_toRightOf="@id/tofriend" >
+
+            <RelativeLayout
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_edittext_normal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/feedbackimage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/red_icon2" />
+
+                    <TextView
+                        android:id="@+id/tofriendword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/feedbackimage"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/more_feed_back"
+                        android:textColor="#999999"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--
+           <RelativeLayout
+            android:id="@+id/attention"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/tofriend"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/feedback"
+            android:background="@drawable/bg_edittext_normal" >
+
+            <RelativeLayout
+                android:id="@+id/attentionus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/attentionimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/red_icon3" />
+
+                <TextView
+                    android:id="@+id/attentionword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/attentionimage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/more_attention_us"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/encourage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/tofriend"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/attention"
+            android:background="@drawable/bg_edittext_normal" >
+
+            <RelativeLayout
+                android:id="@+id/encourageus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/encourageimage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/red_icon4" />
+
+                <TextView
+                    android:id="@+id/encourageword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/encourageimage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/more_encourage_us"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        -->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/morebuttonlogin"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/morebottom"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_red_background"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/global_btn_text_size" />
+
+</RelativeLayout>

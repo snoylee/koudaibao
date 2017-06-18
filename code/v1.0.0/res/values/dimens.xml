@@ -1,0 +1,127 @@
+<resources>
+    <!-- 通用大小-->
+    <dimen name="global_small_text_size">12sp</dimen>
+    <dimen name="global_text_size">14sp</dimen>
+    <dimen name="global_mid_text_size">16sp</dimen>
+    <dimen name="global_big_text_size">18sp</dimen>
+    <dimen name="divide_line_height">0.5dp</dimen>
+    <dimen name="divide_line_top">1dp</dimen>
+    <dimen name="global_btn_text_size">18sp</dimen>
+    
+    <!-- 底部菜单文字大小 -->
+	<dimen name="bottom_text_size">14sp</dimen>
+	<!-- 标题栏文字大小 -->
+	<dimen name="title_text_size">20sp</dimen>
+	<dimen name="title_other_text_size">16sp</dimen>
+	<!-- 首页 -->
+	<dimen name="home_title_text_size">22sp</dimen>
+	<dimen name="home_apr_text_size">60sp</dimen>
+	<dimen name="home_tip_text_size">14sp</dimen>
+	<dimen name="home_btn_text_size">20sp</dimen>
+	<dimen name="home_icon_size">14dp</dimen>
+	<dimen name="home_circle_margin_top">10dp</dimen>
+	<dimen name="home_tip_margin_top">20dp</dimen>
+	<dimen name="home_tip_text_margin_left">3dp</dimen>
+	<dimen name="home_tip_margin_left">9dp</dimen>
+	<dimen name="home_btn_margin_top">36dp</dimen>
+	<dimen name="home_safe_margin_top">10dp</dimen>	
+	<dimen name="home_btn_margin">30dp</dimen>
+	<dimen name="home_btn_padding">7dp</dimen>
+	<!-- 个人中心 -->
+	<dimen name="selfcenter_global_text_size">14sp</dimen>
+	<dimen name="selfcenter_lastday_profits_text_size">70sp</dimen>
+	<dimen name="selfcenter_total_profits_text_size">35sp</dimen>
+	<dimen name="selfcenter_global_account_text_size">22sp</dimen>
+	<dimen name="selfcenter_global_margin">15dp</dimen>
+	<dimen name="selfcenter_invest_record_account_padding">2dp</dimen>
+	<dimen name="selfcenter_invest_record_account_margin">2dp</dimen>
+	<dimen name="selfcenter_invest_record_account_min_width">18dp</dimen>
+	<!-- 持有资产 -->
+	<dimen name="holding_asset_divide_line_height">0.8dp</dimen>
+	<dimen name="holding_base_size">14sp</dimen>
+	<dimen name="holding_asset_money_size">40sp</dimen>
+	<dimen name="holding_asset_size">15dp</dimen>
+	<dimen name="holding_asset_top_size">24dp</dimen>
+	<dimen name="holding_asset_top_size_one">20dp</dimen>
+	<dimen name="linone_size">18sp</dimen>
+	<dimen name="no_income_size_larg">16sp</dimen>
+	<dimen name="no_income_size">12sp</dimen>
+	<dimen name="no_income_size_xxlarg">18sp</dimen>
+	<dimen name="no_income_size_small">12sp</dimen>
+	<dimen name="pay_holding_asset_money_size">5dp</dimen>
+	<dimen name="holding_top_size">115dp</dimen>
+	<dimen name="pay_out_size">45dp</dimen>
+	<dimen name="holding_base_hoid_size">16sp</dimen>
+	<dimen name="holding_base_hoid_size_larg">21sp</dimen>
+	<!-- 口袋宝详情 -->
+	<dimen name="kdbdetail_profits_text_size">35sp</dimen>
+	<dimen name="kdbdetail_apr_text_size">60sp</dimen>
+	<dimen name="kdbdetail_apr_percent_text_size">20sp</dimen>
+	<dimen name="kdbdetail_invest_btn_text_size">18sp</dimen>
+	<!-- P2P详情 -->
+	<dimen name="productdetail_profits_text_size">35sp</dimen>
+	<dimen name="productdetail_apr_text_size">60sp</dimen>
+	<dimen name="productdetail_apr_percent_text_size">20sp</dimen>
+	<dimen name="productdetail_invest_btn_text_size">18sp</dimen>		
+	<!--产品列表-->
+	<dimen name="productlist_title_label_text_size">16sp</dimen>
+	<dimen name="product_P_Name">18sp</dimen>
+	<dimen name="product_P_aprLabel">14sp</dimen>
+	<dimen name="product_Y_Hua">14sp</dimen>
+	<dimen name="product_people">14sp</dimen>
+	<dimen name="product_yitou">14sp</dimen>
+    <dimen name="product_Y_day">14sp</dimen>
+    <dimen name="product_qixian">14sp</dimen>
+    <dimen name="product_Q_buy">14sp</dimen>
+    <dimen name="product_qigou">14sp</dimen>
+    <dimen name="product_x">16sp</dimen>
+	<!--累計收益-->
+	<dimen name="total_profit">30sp</dimen>
+	<!-- 确认投标 -->
+	<dimen name="invest_global_text_size">18sp</dimen>
+	<dimen name="invest_margin_left">15dp</dimen>	
+	<dimen name="invest_product_name_margin_top">20dp</dimen>
+	<dimen name="invest_btn_margin_top">30dp</dimen>
+	<dimen name="invest_min_account_view_margin_top">10dp</dimen>				
+	<dimen name="invest_time_label_margin_top">5dp</dimen>
+	<dimen name="invest_margin_bottom">5dp</dimen>
+	<dimen name="invest_invest_account_view_margin_top">25dp</dimen>
+	<!-- 注册 -->
+	<dimen name="register_number">16sp</dimen>
+	<!-- 账号中心 -->
+	<dimen name="account_textsize_name">16sp</dimen>
+	<dimen name="account_textsize_account">16sp</dimen>
+	<dimen name="account_line_height">3dp</dimen>
+		<!-- 反馈页面数值设置 -->
+ 	<dimen name="feedback_text_size">16sp</dimen>
+ 	<dimen name="btn_text_size">18sp</dimen>
+ 	<dimen name="feedback_input_feed_height">200dp</dimen>
+ 	<dimen name="feedback_input_email_height">40dp</dimen>
+ 	<dimen name="feedback_margin_left">20dp</dimen>
+ 	<dimen name="feedback_margin_right">20dp</dimen>
+ 	<dimen name="feedback_feed_margin_top">25dp</dimen>
+ 	<dimen name="feedback_email_margin_top">15dp</dimen>
+ 	<dimen name="feedback_feed_padding">10dp</dimen>
+ 	<dimen name="feedback_email_padding">10dp</dimen>
+ 	<dimen name="feedback_box_stroke_size">0.5dp</dimen>
+ 		<!-- 投资情况 -->
+ 	<dimen name ="tender_text_mid_size">16sp</dimen>
+ 	<dimen name ="tender_text_small_size">14sp</dimen>
+ 	<dimen name ="tender_text_size">18sp</dimen>
+ 	<dimen name ="tender_construction_text_top">18sp</dimen>
+ 	<dimen name ="tender_user_label_margintop">8dp</dimen>
+ 	<dimen name ="tender_user_label_marginLeft">16dp</dimen>
+ 	<dimen name ="tender_num_label_marginTop">8dp</dimen>
+ 	<dimen name ="tender_num_label_marginRight">4dp</dimen>
+ 	<dimen name ="tender_date_marginTop">4dp</dimen>
+ 	<dimen name ="tender_money_marginRight">15dp</dimen>
+ 	<!--交易记录 -->
+ 	<dimen name ="trasaction_record_small_size">14sp</dimen>
+ 	<dimen name ="trasaction_record_nomarl_size">18sp</dimen>
+ 	<dimen name ="trasaction_record_mid_size">16sp</dimen>
+ 	<dimen name ="trasaction_record_d_linteo">8dp</dimen>
+ 	<dimen name ="trasaction_record_h_linteo">8dp</dimen>
+ 	<!--登录-->
+ 	<dimen name="login_text">14sp</dimen>
+ 	
+</resources>

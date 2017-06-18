@@ -1,0 +1,213 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rel_transor_re" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#f2f2f2"
+    android:paddingBottom="15dp"
+    android:layout_gravity="center_horizontal">
+<TextView 
+    android:id="@+id/noData"
+    android:layout_width="match_parent"
+   	android:layout_height="wrap_content"
+   	android:gravity="center"
+   	android:visibility="gone"
+   	android:text="暂无转让项目"
+	android:textColor="@color/global_label_color"
+	android:textSize="@dimen/global_mid_text_size"
+   	/>
+<RelativeLayout 
+    android:id="@+id/infoView"
+    android:layout_width="match_parent"
+   	android:layout_height="wrap_content"
+   	android:layout_gravity="center"
+   	android:gravity="center"
+   	android:paddingLeft="15dp"
+   	android:paddingBottom="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+   	android:background="@color/global_white_color"
+   	 >
+   	<!--    	android:visibility="gone" -->
+
+	<RelativeLayout
+	    android:id="@+id/rel_transor_name" 
+	    android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content"
+	   	>
+       <TextView  
+        android:id="@+id/transfer_project_name"
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="口袋包"
+		android:textColor="#333333"
+		android:textSize="18sp"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true" />
+       <TextView
+        android:id="@+id/atonce_buy" 
+        android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true"
+		android:text="立即购买"
+		android:paddingTop="15dp"
+		android:paddingBottom="15dp"
+		android:paddingLeft="15dp"
+		android:paddingRight="15dp"
+		android:textColor="#fd5353"
+		android:textSize="16sp" />
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:id="@+id/rel_transor_name_one"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:layout_below="@id/rel_transor_name" >
+
+       <TextView
+           android:id="@+id/ownerLabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="所属人"
+           android:textColor="#999999"
+           android:textSize="@dimen/global_text_size" />
+
+       <TextView
+           android:id="@+id/transfer_type_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/ownerLabel"
+           android:layout_marginLeft="5dp"
+           android:text="张先生"
+           android:textColor="#999999"
+           android:textSize="@dimen/global_text_size" />
+   </RelativeLayout>
+
+   <RelativeLayout
+    android:layout_below="@id/rel_transor_name_one" 
+    android:id="@+id/rel_transor_name_two"    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical"
+>
+        <TextView
+           android:id="@+id/textView2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="预期年化"
+           android:textColor="#999999"
+           android:textSize="@dimen/global_text_size" />
+
+       <TextView
+           android:id="@+id/assgin_rate"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/textView2"
+           android:text="8.00%"
+           android:textColor="#fd5353"
+           android:layout_marginLeft="5dp"
+           android:textSize="@dimen/global_text_size" />
+        <TextView
+           android:id="@+id/apr_name"
+           android:layout_toRightOf="@id/assgin_rate"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:text="原利率"
+           android:textColor="#999999"
+           android:textSize="@dimen/global_text_size" />
+
+       <TextView
+           android:id="@+id/apr"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+    	   android:layout_toRightOf="@id/apr_name"
+           android:layout_marginLeft="5dp"
+           android:text="7.00%"
+           android:textColor="#999999"
+           android:textSize="@dimen/global_text_size" />
+
+   </RelativeLayout>
+   <RelativeLayout 
+    android:layout_below="@id/rel_transor_name_two" 
+    android:id="@+id/rel_transor_name_three"    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical">
+         <TextView
+           android:id="@+id/accountLabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="转让价格（元）"
+           android:textColor="#999999"
+           android:textSize="@dimen/global_text_size" />
+
+       <TextView
+           android:id="@+id/assgin_fee"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/accountLabel"
+           android:text="100.00"
+           android:textColor="#333333"
+           android:layout_marginLeft="5dp"
+           android:textSize="@dimen/global_text_size" />
+       
+   </RelativeLayout>
+   <RelativeLayout 
+    android:id="@+id/rel_transfor_name_four"
+    android:layout_below="@id/rel_transor_name_three"  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:gravity="center_vertical" >
+         <TextView
+           android:id="@+id/leftDayLabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="剩余期限"
+           android:textColor="#999999"
+           android:textSize="@dimen/global_text_size" 
+           />
+
+       <TextView
+           android:id="@+id/rest_days"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/leftDayLabel"
+           android:text="100天"
+           android:textColor="#333333"
+           android:layout_marginLeft="5dp"
+           android:textSize="@dimen/global_text_size"
+           />
+   </RelativeLayout>
+<!--    <RelativeLayout 
+    android:id="@+id/rel_transfor_name_five"
+    android:layout_below="@id/rel_transfor_name_four"  
+    android:layout_width="match_parent"
+    android:layout_height="12dp"
+   	android:gravity="center_vertical"
+    >
+         <TextView
+           android:id="@+id/textView1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dp"
+           android:textColor="#999999"
+           android:textSize="@dimen/global_text_size" 
+           />
+       <TextView
+           android:id="@+id/rest_days"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@id/textView1"
+           android:textColor="#333333"
+           android:layout_marginLeft="8dp"
+           android:textSize="@dimen/global_text_size"
+        />
+   </RelativeLayout> -->
+   </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kdkj.koudailicai.lib.ui.RelativeLayout.ResizeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rolloutParentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/rollouttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/rolloutscrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rollouttitle"
+        android:background="@color/global_back_black_color"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/candrolrelalout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp" >
+
+                <LinearLayout
+                    android:id="@+id/candrollout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/canrollout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您可转出金额"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/canrolloutmoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0.00"
+                        android:textColor="#fd5353"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/yuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="#666666"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/rollouttixian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/candrolrelalout"
+                android:layout_marginLeft="20dp"
+                android:text="转出金额"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/polledittixian"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/rollouttixian"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_edittext"
+                android:inputType="numberDecimal"
+                android:maxLength="11"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:id="@+id/polljiaoyipassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/polledittixian"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="交易密码"
+                android:textColor="#333333"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:id="@+id/polleditpasslayout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/polljiaoyipassword"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" >
+
+                <EditText
+                    android:id="@+id/polleditpassword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_edittext"
+                    android:inputType="textPassword"
+                    android:maxLength="6"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/polllostpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignRight="@id/polleditpassword"
+                    android:gravity="center"
+                    android:minWidth="60dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="忘记密码"
+                    android:textColor="@color/global_label_color"
+                    android:textSize="@dimen/global_text_size" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_toLeftOf="@id/polllostpassword"
+                    android:background="@color/global_line_weight_color" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pollbuttontixian"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/polleditpasslayout"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_grey_background"
+                android:gravity="center"
+                android:onClick="false"
+                android:text="转出"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/global_btn_text_size" />
+        </RelativeLayout>
+    </ScrollView>
+
+</com.kdkj.koudailicai.lib.ui.RelativeLayout.ResizeRelativeLayout>

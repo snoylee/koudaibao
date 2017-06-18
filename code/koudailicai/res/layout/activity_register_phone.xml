@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+	<EditText
+        android:id="@+id/et_phone_number"
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:drawablePadding="8dp"
+        android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="50dp" 
+	    android:layout_below="@id/title"
+        android:drawableLeft="@drawable/phone_x"
+        android:hint="@string/register_phone"
+        android:gravity="center_vertical|left"
+       	android:background="@drawable/bg_edittext"        
+        android:textColor="@color/global_black_color"
+        android:textSize="@dimen/global_mid_text_size" />
+	
+	<TextView
+        android:id="@+id/tv_next"
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_phone_number"
+	    android:layout_marginLeft="20dp"
+	    android:layout_marginRight="20dp"
+	    android:layout_marginTop="@dimen/invest_btn_margin_top"
+        android:gravity="center"
+        android:background="@drawable/btn_grey_background"        
+        android:text="@string/invest_next_label"
+        android:textColor="@color/global_white_color"
+        android:textSize="@dimen/global_btn_text_size" />
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_next"
+        android:text="口袋理财承诺不会向第三方透露您的个人信息。"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="14sp"
+        android:textColor="#999999"/>
+   	<ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>

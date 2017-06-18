@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/global_red_color" >
+
+    <ImageView
+        android:id="@+id/guideone"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/congratulation" />
+    
+
+
+    <TextView 
+        android:id="@+id/oneword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/global_white_color"
+        android:text="让来自星星的口袋君，为您的财富助力"
+        android:textSize="16sp"/>
+    
+	<TextView
+        android:id="@+id/onename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/oneword"
+        android:layout_centerHorizontal="true"
+		android:layout_marginBottom="5dp"
+        android:text="恭喜您"
+        android:textColor="@color/global_white_color"
+        android:textSize="32sp" />
+        
+</RelativeLayout>

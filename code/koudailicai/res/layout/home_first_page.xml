@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" 
+        android:id="@+id/pageInfoView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/homeback1">   
+		<TextView
+		    android:id="@+id/productName"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_alignParentTop="true"
+		    android:layout_marginTop="40dp"
+		    android:text="口袋宝"
+		    android:textColor="@color/home_global_text_color"
+		    android:textSize="@dimen/home_title_text_size" />
+	 			        
+	  	<RelativeLayout
+	  	    android:id="@+id/aprView"
+	  	    android:layout_below="@id/productName"			    
+	  	    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="@dimen/home_circle_margin_top" >
+		    
+			<RelativeLayout
+			    android:id="@+id/aprtext_rl"
+				android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true">
+				<TextView
+				    android:id="@+id/aprText"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="12.68"
+				    android:textColor="@color/home_global_text_color"
+				    android:textSize="@dimen/home_apr_text_size" />
+				<TextView
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_alignBaseline="@+id/aprText"
+				    android:layout_alignBottom="@+id/aprText"
+				    android:layout_toRightOf="@+id/aprText"
+				    android:text="%"
+				    android:textColor="@color/home_global_text_color"
+				    android:textSize="@dimen/home_title_text_size" />
+			</RelativeLayout>
+	
+	
+			<ImageView
+			    android:id="@+id/circleView"
+			    android:layout_width="180dp"
+			    android:layout_height="180dp"
+			    android:background="@drawable/first_circle" />
+	
+		</RelativeLayout>
+		
+	 	<LinearLayout
+	 	    android:id="@+id/tipView"
+	 	    android:layout_below="@id/aprView"
+	 	    android:layout_width="wrap_content"
+	 	    android:layout_height="wrap_content"
+	 	    android:layout_centerHorizontal="true"
+	 	    android:layout_marginTop="@dimen/home_tip_margin_top"
+	 	    android:gravity="center"
+	 	    android:layout_gravity="center"
+	 	    android:orientation="horizontal" >
+			<ImageView 
+			    android:layout_width="@dimen/home_icon_size"
+	 	        android:layout_height="@dimen/home_icon_size"
+	 	        android:src="@drawable/home_limit_account_icon" />
+	 	    <TextView
+	 	        android:id="@+id/accountLimitTip"
+	 	        android:layout_width="wrap_content"
+	 	        android:layout_height="wrap_content"
+	 	        android:layout_marginLeft="@dimen/home_tip_text_margin_left"
+	 	        android:text="25元起购"
+	 	        android:textColor="@color/home_global_text_color"
+	 	        android:textSize="@dimen/home_tip_text_size" />
+	
+	 	    <ImageView
+	 	        android:layout_width="@dimen/home_icon_size"
+	 	        android:layout_height="@dimen/home_icon_size"
+	 	        android:layout_marginLeft="@dimen/home_tip_margin_left"
+	 	        android:src="@drawable/home_limit_time_icon" />
+	
+	 	    <TextView
+	 	        android:id="@+id/timeLimitTip"
+	 	        android:layout_width="wrap_content"
+	 	        android:layout_height="wrap_content"
+	 	        android:text="随取随存"
+	 	        android:layout_marginLeft="@dimen/home_tip_text_margin_left"
+	 	        android:textColor="@color/home_global_text_color"
+	 	        android:textSize="@dimen/home_tip_text_size" />
+			<ImageView 
+			    android:layout_width="14dp"
+	 	        android:layout_height="14dp"
+	 	        android:src="@drawable/home_progress_icon"
+	 	        android:layout_marginLeft="@dimen/home_tip_margin_left"
+			    />
+	 	    <TextView
+	 	        android:id="@+id/progressTip"
+	 	        android:layout_width="wrap_content"
+	 	        android:layout_height="wrap_content"
+	 	        android:layout_marginLeft="@dimen/home_tip_text_margin_left"
+	 	        android:text="60%完成"
+	 	        android:textColor="@color/home_global_text_color"
+	 	        android:textSize="@dimen/home_tip_text_size" />
+	 	</LinearLayout>
+	    <TextView 
+		   android:id="@+id/investBtn"
+		   android:layout_below="@id/tipView"
+		   android:layout_width="fill_parent"
+		   android:layout_height="wrap_content"
+		   android:layout_marginTop="@dimen/home_btn_margin_top"
+		   android:gravity="center"
+		   android:background="@drawable/home_invest_btn"
+		   android:layout_marginLeft="@dimen/home_btn_margin"
+		   android:layout_marginRight="@dimen/home_btn_margin"
+		   android:padding="@dimen/home_btn_padding"
+		   android:textSize="@dimen/home_btn_text_size"
+		   android:text="@string/home_invest_btn_text"
+		   android:textColor="@color/home_btn_text_color" />
+	   	<LinearLayout
+	 	    android:id="@+id/safeTip"
+	 	    android:layout_below="@id/investBtn"
+	 	    android:layout_width="wrap_content"
+	 	    android:layout_height="wrap_content"
+	 	    android:layout_marginTop="@dimen/home_safe_margin_top"
+	 	    android:layout_centerHorizontal="true"
+	 	    android:gravity="center"
+	 	    android:layout_gravity="center"
+	 	    android:orientation="horizontal" >
+	
+	   		<ImageView
+	   		    android:id="@+id/safeImage"
+	   		    android:layout_width="@dimen/home_icon_size"
+	   		    android:layout_height="@dimen/home_icon_size"
+	   		 	android:gravity="center"
+			   	android:layout_gravity="center"
+	   		    android:background="@drawable/baored" />
+	
+	 	   <TextView 
+			   android:id="@+id/safeText"
+			   android:layout_width="fill_parent"
+			   android:layout_height="wrap_content"
+			   android:layout_marginLeft="@dimen/home_tip_text_margin_left"
+			   android:gravity="center"
+			   android:layout_gravity="center"
+			   android:textSize="@dimen/home_tip_text_size"
+			   android:text="@string/home_safe_text"
+			   android:textColor="@color/home_first_safe_text_color" />  
+	 	</LinearLayout>
+	 	<ImageView
+	   		    android:id="@+id/arrow_homepage"
+	   		    android:layout_width="14dp"
+	   		    android:layout_height="23dp"
+	   		    android:layout_alignParentBottom="true"
+	   		    android:layout_marginBottom="5dp"
+	   		 	android:layout_centerHorizontal="true"
+	   		    android:background="@drawable/arrow_homepage" 
+	   		    android:visibility="invisible"/>
+	</RelativeLayout>

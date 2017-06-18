@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="@dimen/tender_user_label_marginLeft"
+		        android:layout_marginTop="@dimen/tender_user_label_margintop"
+		        android:gravity="left|center"
+		        android:text="@string/tender_user_label"
+		        android:textColor="@color/tender_text_nomarl_color"
+		        android:textSize="@dimen/tender_text_mid_size" />
+
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:layout_height="40dp"
+		        android:layout_marginRight="@dimen/tender_num_label_marginRight"
+		        android:layout_marginTop="@dimen/tender_num_label_marginTop"
+		        android:gravity="right|center"
+		        android:text="@string/tender_num_label"
+		        android:textColor="@color/tender_text_nomarl_color"
+		        android:textSize="@dimen/tender_text_mid_size" />
+
+		</LinearLayout>
+		 <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/divide_line_height"
+	        android:background="@color/selfcenter_divide_line_color" /> 
+
+</LinearLayout>

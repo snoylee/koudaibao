@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kdkj.koudailicai.lib.ui.RelativeLayout.ResizeRelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/transferParentView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/transfertitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/transferscrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/transfertitle"
+        android:background="@color/global_back_black_color"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/transferInfoView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/transferName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/invest_margin_left"
+                    android:layout_marginTop="@dimen/invest_product_name_margin_top"
+                    android:text="项目名称"
+                    android:textColor="@color/global_black_color"
+                    android:textSize="@dimen/global_text_size" />
+
+                <RelativeLayout
+                    android:id="@+id/transferAccountView"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/transferName"
+                    android:layout_below="@id/transferName"
+                    android:layout_marginTop="@dimen/invest_min_account_view_margin_top" >
+
+                    <TextView
+                        android:id="@+id/transferAccountLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/transfer_year_label"
+                        android:textColor="@color/global_label_color"
+                        android:textSize="@dimen/global_text_size" />
+
+                    <TextView
+                        android:id="@+id/transferapr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/transferAccountLabel"
+                        android:layout_toRightOf="@id/transferAccountLabel"
+                        android:text="11"
+                        android:textColor="#ff0000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/transferpercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/transferAccountLabel"
+                        android:layout_toRightOf="@id/transferapr"
+                        android:text="%"
+                        android:textColor="@color/global_label_color"
+                        android:textSize="@dimen/global_text_size" />
+
+                    <TextView
+                        android:id="@+id/totalLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/transferAccountLabel"
+                        android:layout_marginTop="@dimen/invest_time_label_margin_top"
+                        android:text="@string/transfer_total_label"
+                        android:textColor="@color/global_label_color"
+                        android:textSize="@dimen/global_text_size" />
+
+                    <TextView
+                        android:id="@+id/totalmoney"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/totalLabel"
+                        android:layout_toRightOf="@id/totalLabel"
+                        android:text="2240"
+                        android:textColor="@color/global_label_color"
+                        android:textSize="@dimen/global_text_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/transferView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/transferAccountView"
+                    android:layout_toRightOf="@id/transferAccountView" >
+
+                    <TextView
+                        android:id="@+id/transferfeeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="@string/transfer_fee_label"
+                        android:textColor="@color/global_label_color"
+                        android:textSize="@dimen/global_text_size" />
+
+                    <TextView
+                        android:id="@+id/transferfee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/transferfeeLabel"
+                        android:layout_toRightOf="@id/transferfeeLabel"
+                        android:text="2000"
+                        android:textColor="@color/global_label_color"
+                        android:textSize="@dimen/global_text_size" />
+
+                    <TextView
+                        android:id="@+id/transferaprLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@id/transferfeeLabel"
+                        android:layout_marginTop="@dimen/invest_time_label_margin_top"
+                        android:text="@string/transfer_apr_Label"
+                        android:textColor="@color/global_label_color"
+                        android:textSize="@dimen/global_text_size" />
+
+                    <TextView
+                        android:id="@+id/alreadytransferapr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/transferaprLabel"
+                        android:layout_toRightOf="@id/transferaprLabel"
+                        android:text="100"
+                        android:textColor="@color/global_label_color"
+                        android:textSize="@dimen/global_text_size" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/buyprogressBarImageView"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@id/transferInfoView"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="@dimen/invest_margin_left"
+                android:layout_marginRight="@dimen/invest_margin_left"
+                android:layout_marginTop="15dp" >
+
+                <com.kdkj.koudailicai.lib.ui.KdlcProgressBar
+                    android:id="@+id/buyprogressRedBar"
+                    style="@style/KDLCProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:progress="0" />
+                <TextView 
+                    android:id="@+id/lasttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="剩余30天"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="25dp"
+                    android:textSize="12sp"
+                    android:textColor="#333333"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/transferAccountMoney"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_below="@id/buyprogressBarImageView"
+                android:background="@color/global_white_color" >
+
+                <TextView
+                    android:id="@+id/transferMoneyLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/invest_margin_left"
+                    android:text="@string/transfer_money_label"
+                    android:textColor="@color/global_black_color"
+                    android:textSize="@dimen/invest_global_text_size" />
+
+                <EditText
+                    android:id="@+id/transferAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/invest_invest_account_view_margin_top"
+                    android:layout_toRightOf="@id/transferMoneyLabel"
+                    android:background="@color/global_white_color"
+                    android:hint="@string/transfer_account_hint"
+                    android:inputType="numberDecimal"
+                    android:maxLength="11"
+                    android:textColor="@color/global_black_color"
+                    android:textColorHint="@color/global_label_color"
+                    android:textSize="@dimen/invest_global_text_size" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divide_line_height"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/selfcenter_divide_line_color" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/divide_line_height"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/selfcenter_divide_line_color" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/transferconsult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/transferAccountMoney"
+                android:layout_marginTop="@dimen/invest_min_account_view_margin_top" >
+
+                <TextView
+                    android:id="@+id/transfee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:text="参考金额：0.00"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/transferBtnView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/transferconsult"
+                android:layout_marginLeft="@dimen/invest_margin_left"
+                android:layout_marginRight="@dimen/invest_margin_left"
+                android:layout_marginTop="@dimen/invest_btn_margin_top" >
+
+                <TextView
+                    android:id="@+id/transferBtn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_grey_background"
+                    android:gravity="center"
+                    android:text="@string/transfer_next_label"
+                    android:textColor="@color/global_white_color"
+                    android:textSize="@dimen/global_btn_text_size" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</com.kdkj.koudailicai.lib.ui.RelativeLayout.ResizeRelativeLayout >

@@ -1,0 +1,502 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kdkj.koudailicai"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+ <!--<uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> -->
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>   
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户。 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许应用程序联网 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 用于加载图片 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- 用于人人SSO登陆 -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- 用于人人SSO登陆 -->
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <!-- 用于人人SSO登陆 -->
+    <uses-permission android:name="android.permission.READ_SMS" />  
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <!-- 【必须】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 【可选】 信鸽SDK所需权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="com.kdkj.koudailicai.view.KDLCApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_120"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <receiver android:name="com.kdkj.koudailicai.lib.AlarmReceiver" android:process=":remote" /> 
+        <activity
+            android:name="com.kdkj.koudailicai.view.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTop" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.GuideActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.holdasset.HoldingAssetActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.TransactionRecordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.product.KdbDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.product.ProductDetailActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>        
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.invest.InvestAccountActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.invest.InvestCodeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait">
+        </activity>           
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.accountremain.WithdrawActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.invest.InvestChargeActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+		<activity
+		   android:theme="@style/ActivityTheme" 
+	       android:name="com.kdkj.koudailicai.view.invest.InvestSuccessActivity"
+	       android:screenOrientation="portrait">
+	   </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.holdasset.KdbRollOutAccountActivity" 
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"        
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.holdasset.KdbRollOutListActivity"       
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.login.LoginActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.login.LoginAlreadyActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:theme="@style/ActivityTheme" 
+            android:name="com.kdkj.koudailicai.view.selfcenter.holdasset.TransferMoneyActivity"  
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"       
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.register.RegisterPhoneActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.register.RegisterPasswordActivity"  
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.holdasset.TransferRecordActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.AccountCenterActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.adapter.TransferBuySuccessActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.WebViewActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.password.BackPasswordActivity" 
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"        
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.password.NewPasswordActvity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"         
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.TradingPasswordActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"  
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.more.ActiveCenterActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.more.MessageCenterActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.more.AboutKoudaiActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+          <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.more.FeedBackActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"         
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.more.HelpCenterActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:theme="@style/ActivityTheme" 
+            android:name="com.kdkj.koudailicai.view.selfcenter.bankcard.ConfirmIdentityActivity"         
+            android:screenOrientation="portrait">
+        </activity>
+
+		<activity
+		    android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.bankcard.AddBankCardActivity" 
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"        
+            android:screenOrientation="portrait">
+        </activity>
+		<activity
+		    android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.bankcard.ChooseBankNameActivity" 
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"        
+            android:screenOrientation="portrait">
+        </activity>               
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.password.ModifyPasswordActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"         
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+           android:theme="@style/ActivityTheme"
+           android:name="com.kdkj.koudailicai.view.PromptActivity"
+           android:screenOrientation="portrait">
+       </activity>
+	   <activity
+	       android:theme="@style/ActivityTheme" 
+	       android:name="com.kdkj.koudailicai.view.selfcenter.holdasset.KdbRollOutSuccessActivity"
+	       android:screenOrientation="portrait">
+	   </activity>
+	   <activity
+	       android:theme="@style/ActivityTheme" 
+	       android:name="com.kdkj.koudailicai.view.selfcenter.holdasset.TransferSuccessActivity"
+	       android:screenOrientation="portrait">
+	   </activity>
+
+	   <activity
+	       android:theme="@style/ActivityTheme" 
+	       android:name="com.kdkj.koudailicai.view.selfcenter.accountremain.AccountRemainActivity"
+	       android:screenOrientation="portrait">
+	   </activity>
+	   <activity
+	       android:theme="@style/ActivityTheme" 
+	       android:name="com.kdkj.koudailicai.view.product.TenderConstructionActivity"
+	       android:screenOrientation="portrait">
+	   </activity>
+	   <activity
+	       android:theme="@style/ActivityTheme"
+           android:name="com.kdkj.koudailicai.view.selfcenter.password.ModifyPasswordTradingActivity"
+           android:windowSoftInputMode="stateAlwaysHidden|adjustResize"         
+           android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.password.SetTradPwdActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme" 
+            android:name="com.kdkj.koudailicai.view.selfcenter.accountremain.WithDrawSuccessActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme" 
+            android:name="com.kdkj.koudailicai.view.selfcenter.Gesture.GestureEditActivity"
+            android:screenOrientation="portrait">
+        </activity>
+         <activity
+            android:theme="@style/ActivityTheme" 
+            android:name="com.kdkj.koudailicai.view.selfcenter.Gesture.GestureVerifyActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.accountremain.WithdrawListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.holdasset.TransferPasswordActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.accountremain.PaymentDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>       
+        <activity
+            android:name="com.kdkj.koudailicai.view.LoadingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent">
+        </activity> 
+        <activity
+            android:theme="@style/ActivityTheme" 
+            android:name="com.kdkj.koudailicai.view.selfcenter.holdasset.TransferCancelActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.accountremain.SpendingDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.accountremain.IncomeDetailsActivity"
+            android:screenOrientation="portrait">
+        </activity>
+         <activity 
+            android:theme="@style/ActivityTheme" 
+            android:name="com.kdkj.koudailicai.view.selfcenter.bankcard.UserBankCardInfoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.profit.ProfitDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+		<activity
+	       android:theme="@style/ActivityTheme" 
+	       android:name="com.kdkj.koudailicai.view.selfcenter.profit.LastDayProfitsActivity"
+	       android:screenOrientation="portrait">
+	    </activity>
+	    <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.profit.TotalProfitActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+          <activity
+            android:theme="@style/ActivityTheme"
+            android:name="com.kdkj.koudailicai.view.selfcenter.AccountFinishedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 【必须】 信鸽receiver广播接收 -->
+        <receiver
+            android:name="com.tencent.android.tpush.XGPushReceiver"
+            android:process=":xg_service_v2" >
+            <intent-filter android:priority="0x7fffffff" >
+
+                <!-- 【必须】 信鸽SDK的内部广播 -->
+                <action android:name="com.tencent.android.tpush.action.SDK" />
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE" />
+                <!-- 【必须】 系统广播：开屏和网络切换 -->
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <!-- 【可选】 一些常用的系统广播，增强信鸽service的复活机会，请根据需要选择。当然，你也可以添加APP自定义的一些广播让启动service -->
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 (2.30及以上版新增)展示通知的activity -->
+        <!-- 【注意】 如果被打开的activity是启动模式为SingleTop，SingleTask或SingleInstance，请根据通知的异常自查列表第8点处理 -->
+        <activity
+            android:name="com.tencent.android.tpush.XGPushActivity"
+            android:exported="false" >
+            <intent-filter>
+
+                <!-- 若使用AndroidStudio，请设置android:name="android.intent.action" -->
+                <action android:name="" />
+            </intent-filter>
+        </activity>
+
+        <!-- 【必须】 信鸽service -->
+        <service
+            android:name="com.tencent.android.tpush.service.XGPushService"
+            android:exported="true"
+            android:persistent="true"
+            android:process=":xg_service_v2" />
+
+        <!-- 【必须】 通知service，此选项有助于提高抵达率 -->
+        <service
+            android:name="com.tencent.android.tpush.rpc.XGRemoteService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.kdkj.koudailicai.PUSH_ACTION" />
+            </intent-filter>
+        </service>
+
+        <!--
+                       【可选】APP实现的Receiver，用于接收消息透传和操作结果的回调，请根据需要添加
+        YOUR_PACKAGE_PATH.CustomPushReceiver需要改为自己的Receiver：
+        -->
+        <receiver android:name="com.kdkj.koudailicai.xgpush.XGMessageReceiver" >
+            <intent-filter>
+                <!-- 接收消息透传 -->
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE" />
+                <!-- 监听注册、反注册、设置/删除标签、通知被点击等处理结果 -->
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 【必须】 请将YOUR_ACCESS_ID修改为APP的AccessId，“21”开头的10位数字，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_ID"
+            android:value="2100066934" />
+        <!-- 【必须】 请将YOUR_ACCESS_KEY修改为APP的AccessKey，“A”开头的12位字符串，中间没空格 -->
+        <meta-data
+            android:name="XG_V2_ACCESS_KEY"
+            android:value="A6FE4ELE282W" />
+        <!--友盟设置  -->
+        <!-- 微信回调activity -->
+        <activity
+            android:name="com.kdkj.koudailicai.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+          <!-- ###################注册SDK使用的Activity###################### -->
+        <!--分享编辑页-->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1103678075" /> 
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        
+        <!-- 友盟AppKey， 需要替换成你自己的 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54858bc6fd98c587d7000c1e" >
+        </meta-data>
+        <meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>   
+		<!-- umeng更新弹框 -->       
+		<activity 
+    		android:name="com.umeng.update.UpdateDialogActivity"
+    		android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+		</activity>
+        
+          <!-- umeng更新service -->
+		<service
+    		android:name="com.umeng.update.net.DownloadingService"
+    		android:process=":DownloadingService" >
+		</service>
+    </application>
+
+</manifest>

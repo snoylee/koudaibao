@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+  	android:background="#f2f2f2"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/lin_transfer_one"    
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="15dp"
+    	android:background="#ffffff"
+    	android:paddingTop="15dp"
+    	android:paddingBottom="15dp"
+    	android:orientation="horizontal">
+          <RelativeLayout
+            android:layout_weight="1"  
+            android:id="@+id/rel_trasor_one"
+            android:layout_width="0dp"
+   			android:layout_height="wrap_content"
+   			android:gravity="center" >
+              <TextView
+                  	android:id="@+id/Transfer_score"  
+                  	android:layout_width="wrap_content"
+   					android:layout_height="wrap_content"
+   					android:textColor="#999999"
+   					android:textSize="16sp"
+   					android:layout_centerHorizontal="true"
+   					android:text="累计转让比数"/>
+               <TextView 
+                   	android:id="@+id/Transfer_accumulated_count" 
+                   	android:layout_below="@id/Transfer_score" 
+                   	android:layout_width="wrap_content"
+   					android:layout_height="wrap_content"
+   					android:layout_marginTop="5dp"
+   					android:layout_centerHorizontal="true"
+   					android:textColor="#fd5353"   					
+   					android:textSize="22sp"
+   					android:text="4857"/>
+          </RelativeLayout>
+		  <View
+		      android:layout_height="match_parent"
+		      android:layout_width="0.5dp"
+		      android:background="@color/global_line_color" />
+          <RelativeLayout
+              	android:id="@+id/rel_cell_tran_out"
+               	android:layout_weight="1" 
+              	android:layout_width="0dp"
+   				android:layout_height="wrap_content"
+   				android:gravity="center" >
+               <TextView
+                   	android:id="@+id/Transfer_amount"
+                   	android:layout_width="wrap_content"
+   					android:layout_height="wrap_content"
+   					android:textColor="#999999"
+   					android:textSize="16sp"
+   					android:layout_centerHorizontal="true"
+   					android:text="累计转让金额（元）"/>
+               <TextView
+                   	android:id="@+id/Transfer_accumulated_amount"
+                   	android:layout_below="@id/Transfer_amount" 
+                   	android:layout_width="wrap_content"
+   					android:layout_height="wrap_content"
+   					android:layout_marginTop="5dp"
+   					android:layout_centerHorizontal="true"
+   					android:textColor="#fd5353"  
+   					android:textSize="22sp"
+   					android:text="570,00,000"/>
+          </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

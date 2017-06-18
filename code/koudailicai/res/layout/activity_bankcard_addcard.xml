@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kdkj.koudailicai.lib.ui.RelativeLayout.ResizeRelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addcredit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<!-- com.kdkj.koudailicai.lib.ui.RelativeLayout.Resize -->
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/addcredittitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/addscrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/addcredittitle"
+        android:background="@color/global_back_black_color"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/addCreditTip"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"               
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:background="@color/global_white_color" >
+
+                <ImageView
+                    android:id="@+id/addcreditidentity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/info" />
+
+                <TextView
+                    android:id="@+id/addcreditinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/addcreditidentity"
+                    android:text="@string/add_credit"
+                    android:textColor="@color/global_black_color"
+                    android:textSize="@dimen/global_text_size" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/userRealName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addCreditTip"
+                android:layout_marginLeft="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="12dp"
+                android:text="持卡人 111"
+                android:textColor="@color/global_black_color"
+                android:textSize="@dimen/global_mid_text_size" />
+			<View
+			    android:id="@+id/firstViewLine"
+			    android:layout_width="wrap_content"
+			    android:layout_height="@dimen/divide_line_height"
+				android:layout_below="@id/userRealName"			    
+			    android:background="@color/global_line_color" />	
+			<TextView
+                android:id="@+id/chooseBankName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+				android:layout_below="@id/firstViewLine"
+                android:background="@color/global_white_color"
+                android:padding="16dp"
+                android:gravity="center|left"
+                android:drawableRight="@drawable/arrowright_x"
+                android:text="请您选择绑卡银行"
+                android:textColor="@color/global_label_color"
+                android:textSize="@dimen/global_mid_text_size" />
+			<View
+			    android:id="@+id/secondViewLine"
+			    android:layout_width="wrap_content"
+			    android:layout_height="@dimen/divide_line_height"
+				android:layout_below="@id/chooseBankName"			    
+			    android:background="@color/global_line_color" />
+			<EditText
+                android:id="@+id/cardNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+				android:layout_below="@id/secondViewLine"
+                android:background="@color/global_white_color"
+                android:padding="16dp"
+                android:gravity="center|left"
+                android:hint="请您输入银行卡号"
+                android:inputType="number"
+                android:maxLength="24"
+                android:textColorHint="@color/global_label_color"
+                android:textColor="@color/global_black_color"
+                android:textSize="@dimen/global_mid_text_size" />
+			<View
+			    android:id="@+id/thirdViewLine"
+			    android:layout_width="wrap_content"
+			    android:layout_height="@dimen/divide_line_height"
+				android:layout_below="@id/cardNo"			    
+			    android:background="@color/global_line_color" />
+			<TextView
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/thirdViewLine"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btn_grey_background"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="@color/global_white_color"
+                android:textSize="@dimen/global_btn_text_size" />	
+            <TextView 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/submit"
+                 android:text="绑卡过程中，第三方支付将扣取0.01元以激活您的账号，我们会补偿0.01元至您的余额"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginLeft="16dp"
+                 android:layout_marginRight="16dp"
+                 android:textSize="14sp"
+                 android:textColor="@color/global_label_color"/>						
+<!--             <RelativeLayout
+                android:id="@+id/allcreditinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/holdcreditname"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp" >
+
+                <TextView
+                    android:id="@+id/allcreditname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_edittext_card"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/global_label_color"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/pleasecredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/allcreditname"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="请选择银行卡"
+                    android:textColor="@color/global_label_color"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/allcreditbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignRight="@id/allcreditname"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/loginbutton"
+                    android:gravity="center"
+                    android:src="@drawable/arrowdown" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/inputcredit"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/allcreditinfo"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp" >
+
+                <EditText
+                    android:id="@+id/inputcreditnumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_edittext_card"
+                    android:hint="请输入银行卡号"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/inputtelephone"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/inputcredit"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp" >
+
+                <EditText
+                    android:id="@+id/inputtelenumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_edittext_card"
+                    android:hint="银行预留手机"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/creditbuttonnext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/inputtelephone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/btn_grey_background"
+                android:gravity="center"
+                android:text="下一步"
+                android:textColor="#ffffff"
+                android:textSize="22sp" /> -->
+        </RelativeLayout>
+    </ScrollView>
+
+</com.kdkj.koudailicai.lib.ui.RelativeLayout.ResizeRelativeLayout>

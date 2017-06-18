@@ -1,0 +1,248 @@
+<resources>
+
+    <string name="app_name">口袋理财</string>
+    <!-- 标题 -->
+    <string name="title_left_img_desc">标题左侧图标</string>
+    <string name="title_right_img_desc">标题右侧图标</string>
+    <!-- 底部菜单 -->
+    <string name="tab_01">精品推荐</string>
+    <string name="tab_02">产品列表</string>
+    <string name="tab_03">我的口袋</string>
+    <string name="tab_04">更多</string>
+    <!-- 产品列表页面 -->
+    <string name="product_list_title">产品列表</string>
+    <!-- 累积收益 -->
+    <string name="totalprofit">累计收益</string>
+     <!-- 收益详情 -->
+    <string name="profitdetail">收益详情</string>
+    <!-- 提现 -->
+    <string name="withdrawtitle">提现</string>
+    <!-- 转出 -->
+    <string name="rollouttitle">转出</string>
+    <!-- 登录 -->
+    <string name="loginintitle">登录</string>
+    <!-- 转让 -->
+    <string name="transfertitle">转让</string>
+    <!-- 购买成功 -->
+    <string name="buysuccess">购买成功</string>
+    <!-- 首页 -->
+    <string name="home_invest_btn_text">立即投资</string>
+    <string name="home_safe_text">工商银行监管风险准备金</string>
+    <!-- 个人中心 -->
+    <string name="selfcenter_title">我的口袋</string>
+    <string name="selfcenter_total_profits_label_text">累计收益（元）</string>
+    <string name="selfcenter_total_assets_label_text">总资产（元）</string>
+    <string name="selfcenter_holding_assets_label_text">持有资产（元）</string>
+    <string name="selfcenter_available_assets_label_text">账户余额（元）</string>
+    <string name="selfcenter_investRecod_label_text">交易记录</string>
+    <string name="selfcenter_historyRecod_label_text">完结项目</string>
+    <string name="selfcenter_investRecod_left_label_text">您有</string>
+    <string name="selfcenter_investRecod_right_label_text">条交易记录</string>
+    <!-- 持有资产 -->
+    <string name="holding_asset_title">持有资产</string>
+    <string name="holding_asset_profits_lable_text">持有总资产（元）</string>
+    <string name="holding_right_lable_aseet">0.00</string>
+    <string name="total_name">口袋宝</string>
+    <string name="investment">持有总额（元）</string>
+    <string name="roll_out">转出</string>
+    <string name="collection_base_money">待收本金（元）</string>
+    <string name="no_income_money">未结算收益（元）</string>
+    <string name="freeze_account_label">申购冻结（元）</string>
+    
+    <string name="investmenttal">投资金额</string>
+    <string name="holding_asset_project_name_label">信托理财一号</string>
+    <string name="holding_asset_statuslabel_label">（成功）</string>
+    <string name="holding_asset_start_date_label">起息日：</string>
+    <string name="project_apr_percent_label">年化</string>
+    <string name="project_apr_percent_value">0.0%</string>
+    <string name="statusLabel_out_value">转让</string>
+    <string name="incvert_mount_duein_capital_label">投资金额：</string>
+    <string name="incvert_mout_duein_acpital_value">0.00元</string>
+    <string name="on_income_duein_profits_label">未结算收益：</string>
+    <string name="on_income_duein_profits_value">0.00元</string>
+    <string name="is_transfe_money_label">待收总额：</string>
+    <string name="is_transfe_money_value">0.00</string>
+    <string name="last_repay_ment_date_label">最近还款日：</string>
+    <string name="last_repay_ment_date_value">0000-00-00</string>
+
+    <!-- 口袋宝详情 -->
+    <string name="kdbdetail_title">口袋宝</string>
+    <string name="kdbdetail_apr_label">预期年化</string>
+    <string name="kdbdetail_percent_label">%</string>
+    <string name="kdbdetail_invest_num_label">已投</string>
+    <string name="kdbdetail_tip_divide_line">|</string>
+    <string name="kdbdetail_safe_label">工商银行监管风险准备金</string>
+    <string name="kdbdetail_compute_title">计算预期收益</string>
+    <string name="kdbdetail_compute_account_label">投入金额（元）</string>
+    <string name="kdbdetail_compute_days_label">理财期限（天）</string>
+    <string name="kdbdetail_compute_account">10000</string>
+    <string name="kdbdetail_compute_days">365</string>
+    <string name="kdbdetail_compute_profits_label">预期收益（元）</string>
+    <string name="kdbdetail_product_type_label">产品类型</string>
+    <string name="kdbdetail_risk_measures_label">风险措施</string>
+    <string name="kdbdetail_instruction_label">相关说明</string>
+    
+    <string name="kdbdetail_product_desc_label">项目概述</string>
+    <string name="kdbdetail_invest_btn_text">立即投资</string>
+    <!-- P2P产品详情 -->
+    <string name="productdetail_title">项目详情</string>
+    <string name="productdetail_apr_label">预期年化</string>
+    <string name="productdetail_percent_label">%</string>
+    <string name="productdetail_time_label">期限</string>
+    <string name="productdetail_tip_divide_line">|</string>
+    <string name="productdetail_safe_label">本平台本息垫付</string>
+    <string name="productdetail_total_account_label">融资金额</string>
+    <string name="productdetail_left_account_label">剩余金额</string>
+    <string name="productdetail_progress_label">融资进度</string>
+    <string name="productdetail_compute_title">计算预期收益</string>
+    <string name="productdetail_compute_account_label">投入金额（元）</string>
+    <string name="productdetail_compute_days_label">理财期限</string>
+    <string name="productdetail_compute_account">10000</string>
+    <string name="productdetail_compute_days">365</string>
+    <string name="productdetail_compute_profits_label">预期收益（元）</string>
+    <string name="productdetail_product_type_label">产品类型</string>
+    <string name="productdetail_risk_measures_label">风险措施</string>
+    <string name="productdetail_product_desc_label">项目概述</string>
+    <string name="productdetail_invest_num_label">购买情况</string>
+    <string name="productdetail_invest_num_tip">已购买</string>
+    <string name="productdetail_instruction_label">相关说明</string>
+    <string name="productdetail_interest_day_label">起息日：</string>
+    <string name="productdetail_repay_day_label">还款日：</string>
+    <string name="productdetail_repay_instruction_label">还款提示：</string>
+    <string name="productdetail_interest_day">募集成功次日开始计算收益</string>
+    <string name="productdetail_repay_day">到期后两个工作日内进行处理</string>
+    <string name="productdetail_repay_instruction">到期后本金及收益自动归还至账户余额</string>
+    <string name="productdetail_invest_btn_text">立即投资</string>
+    <string name="productdetail_repay_last_day_label">还款日</string>
+
+    <!-- 反馈 -->
+    <string name="feedback_tip">请输入您的反馈意见</string>
+    <string name="feedback_number">联系方式</string>
+    <!-- 确认投标 -->
+    <string name="invest_title">投资</string>
+    <string name="invest_min_account_label">起投金额：</string>
+    <string name="invest_time_label">理财期限：</string>
+    <string name="invest_fee_label">剩余金额：</string>
+    <string name="invest_apr_label">预期年化：</string>
+    <string name="invest_next_label">下一步</string>
+    <string name="invest_account_label">买入金额</string>
+    <string name="invest_account_hint">请输入购买金额</string>
+    <string name="investcharge_account_label">买入金额（元）</string>
+    <string name="investcharge_pay_method">付款方式</string>
+    <string name="investcharge_passwd_label">交易密码</string>
+    <string name="investcharge_passwd_hint">请输入交易密码</string>
+    <string name="investcharge_forget_passwd_tip">忘记密码？</string>
+    <string name="investcharge_accept_1">《购买及债权转让协议》</string>
+    <string name="investcharge_accept_2">《支付服务协议》</string>
+    <string name="investcharge_confirm_btn">确认投资</string>
+    <string name="invest_code_tip">为了您的资金安全，需要进行手机验证</string>
+    <string name="invest_send_tip">验证码已发送至您的手机：</string>
+    <string name="invest_send_btn">重新发送</string>
+    <!-- 转让 -->
+    <string name="transfer_year_label">固定年化：</string>
+    <string name="transfer_total_label">总待收：</string>
+    <string name="transfer_fee_label">本金：</string>
+    <string name="transfer_apr_Label">已收收益：</string>
+    <string name="transfer_money_label">转让金额</string>
+    <string name="transfer_account_hint">请输入转让金额</string>
+    <string name="transfer_next_label">下一步</string>
+    <string name="transfer_password">请输入交易密码</string>
+    <!-- 注册 -->
+    <string name="register_title_1">注册</string>
+    <string name="register_title_2">注册</string>
+    <string name="setpassword">设置登录密码</string>
+    <string name="register_phone">请输入注册手机号</string>
+    <string name="register_verification">请输入短信验证码</string>
+    <string name="register_password">请输入登录密码</string>
+    <string name="register_obtain_verification">点击获取</string>
+    <string name="register_submit">提交注册</string>
+
+    <!-- 密码 -->
+    <string name="pwd_back">找回登录密码</string>
+    <string name="pwd_charge_back">找回交易密码</string>
+    <string name="pwd_new_input">输入新密码</string>
+    <string name="pwd_modify">修改密码</string>
+    <string name="pwd_new">请输入新密码</string>
+    <string name="pwd_confirm">请确认新密码</string>
+    <string name="pwd_old">请输入原始密码</string>
+    <string name="complete">完  成</string>
+    <string name="prompt">密码需由6~16位字符和数字组成。</string>
+    <string name="login_prompt">登录密码需由6~16位字符和数字组成。</string>
+    <string name="pay_prompt">交易密码需由6位数字组成</string>
+    <string name="pwd_phone_number">1356****265</string>
+    <string name="pwd_real_name">请输入真实姓名</string>
+    <string name="pwd_id_card">请输入身份证号</string>
+    <!-- 账号中心 -->
+    <string name="account_center">账户中心</string>
+    <string name="account_center_account">账户</string>
+    <string name="account_center_username">实名认证</string>
+    <string name="account_center_idcard">身份认证</string>
+    <string name="account_center_bankcard">银行卡管理</string>
+    <string name="account_center_key_login">修改登录密码</string>
+    <string name="account_center_key_trading">修改交易密码</string>
+    <string name="account_center_gestures">开启手势</string>
+    <string name="account_center_account_real">1500****565</string>
+    <string name="account_center_username_real">*笑晓</string>
+    <string name="account_center_idcard_real">310310199*****5252</string>
+    <string name="account_center_bankcard_real">（1）</string>
+    <string name="account_center_key_login_real">></string>
+    <string name="account_center_key_trading_real">></string>
+    <!-- 转让记录 -->
+    <string name="transfer_record">转让记录</string>
+    <!-- 转出记录 -->
+    <string name="rollout_list">转出记录</string>
+    <!-- 完结项目 -->
+    <string name="finish_list">完结项目</string>
+    <!-- 收支明细 -->
+    <string name="payment_details">收支明细</string>
+    <!-- 更多 -->
+    <string name="more_title">更多</string>
+    <string name="more_active_center">活动中心</string>
+    <string name="more_message_center">风险控制</string>
+    <string name="more_message_list">消息列表</string>
+    <string name="more_help_center">帮助中心</string>
+    <string name="more_check_update">检查更新</string>
+    <string name="more_about_koudai">关于口袋</string>
+    <string name="more_to_friend">转给好友</string>
+    <string name="more_feed_back">意见反馈</string>
+    <string name="more_attention_us">关注我们</string>
+    <string name="more_encourage_us">给我鼓励</string>
+    <!-- 交易密码 -->
+    <string name="trading_password">交易密码</string>
+    <string name="trading_password_set">交易密码</string>
+    <!-- 身份确认 -->
+    <string name="confirm_identity">总监部门规定，购买理财产品需提供实名信息以确保投资安全</string>
+    <string name="identity_title">身份信息确认</string>
+    <!-- 银行卡管理 -->
+    <string name="add_credit">恭喜您通过实名认证，现在请绑定您的个人银行卡，您的购买与提现资金当且仅会返回至该卡</string>
+    <string name="add_credit_title">添加银行卡</string>
+    <string name="own_credit_name">我的银行卡</string>
+    <string name="bankcard_choose_title">银行列表</string>
+    <string name="bankcard_choose_tip">请选择绑卡银行</string>
+    <!-- 账户余额 -->
+    <string name="remaintitle">账户余额</string>
+    <string name="usablename">可用余额（元）</string>
+    <string name="withdrawingname">提现中余额（元）</string>
+    <!-- 投标情况 -->
+    <string name="tenderConsrtruction">投资记录</string>
+    <string name="tender_user_label">投资用户</string>
+    <string name="tender_num_label">投资金额（元）</string>
+    <string name="tender_phone_value">138*****086</string>
+    <string name="tender_date_value">2014-10-30 21:30</string>
+    <string name="tender_money_value">4,000</string>
+    <!-- 交易记录 -->
+    <string name="trasaction_record_title">交易记录</string>
+    <string name="project_name_label">口袋宝</string>
+    <string name="interest_start_date_value">起息日：2014-10-20</string>
+    <string name="investMoney_value">年化啊实打实的</string>
+    <string name="statusLabel_value">转出</string>
+    <!-- 手势密码 -->
+    <string name="set_gesture_pattern">请绘制锁屏图案，至少连接4个点</string>
+    <string name="set_gesture_pattern_reason">取消</string>
+    <string name="reset_gesture_code">重新设置手势密码</string>
+    <!-- 弹框使用 -->
+    <string name="btn_ok_text">确定</string>
+    <string name="btn_cancel_text">取消</string>
+    
+    <string name="edittext_box">0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM</string>
+</resources>

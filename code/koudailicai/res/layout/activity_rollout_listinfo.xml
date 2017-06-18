@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rolloutlistview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/global_white_color" >
+
+        <TextView
+            android:id="@+id/rolloutAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="400"
+            android:textColor="@color/transparent"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/Rightlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp" >
+
+            <TextView
+                android:id="@+id/R_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="转出成功"
+                android:textColor="@color/global_black_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/k_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/R_list"
+                android:layout_below="@id/R_list"
+                android:layout_marginTop="2dp"
+                android:text="2014-9-23 21:34"
+                android:textColor="@color/global_label_color"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/divide_line_height"
+            android:layout_alignParentBottom="true"
+            android:background="@color/global_line_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+<com.kdkj.koudailicai.lib.ui.pulltorefresh.PullToRefreshListView
+        xmlns:android="http://schemas.android.com/apk/res/android"  
+        android:id="@+id/holdingassentListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:scrollbars="none" >
+</com.kdkj.koudailicai.lib.ui.pulltorefresh.PullToRefreshListView  >
+</LinearLayout>

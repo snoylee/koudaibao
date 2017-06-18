@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView
+        android:id="@+id/guide_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="false"
+        android:focusable="true"
+        android:scaleType="fitXY" />
+    
+    <View
+        android:id="@+id/start_btn"
+        android:layout_width="180dip"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dip"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:focusable="true" />
+
+</RelativeLayout>

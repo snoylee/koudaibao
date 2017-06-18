@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/global_white_color" >
+	<RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/rl_tr" >
+        <LinearLayout
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="8dp"
+			android:paddingBottom="8dp"
+			android:orientation="horizontal" >
+	        <TextView 
+	            android:id="@+id/tv_item_time"
+	            android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:textSize="@dimen/global_text_size"
+				android:gravity="left"
+				android:textColor="@color/global_label_color"
+				android:text="交易时间" /> 
+	    	 <TextView 
+	       		android:id="@+id/tv_item_money"
+				android:layout_width="0dp"				
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			 	android:gravity="left"
+				android:textColor="#000000"
+				android:textSize="@dimen/global_text_size"
+				android:text="交易金额（元）"/>
+	   	 	<TextView
+	           	android:id="@+id/tv_item_interest_rate"  
+				android:layout_width="wrap_content"
+				android:gravity="right"
+				android:minWidth="50dp"
+				android:layout_height="wrap_content"
+				android:textColor="@color/global_red_color"
+				android:textSize="@dimen/global_text_size"
+				android:text="利率" />
+		</LinearLayout>
+	</RelativeLayout> 
+</RelativeLayout>

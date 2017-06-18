@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="libs/Android_SDK.jar"/>
+	<classpathentry kind="lib" path="libs/commons-httpclient-3.1.jar"/>
+	<classpathentry kind="lib" path="libs/libammsdk.jar"/>
+	<classpathentry kind="lib" path="libs/mta-sdk-1.0.0.jar"/>
+	<classpathentry kind="lib" path="libs/open_sdk.jar"/>
+	<classpathentry kind="lib" path="libs/RennSDK-Android.jar"/>
+	<classpathentry kind="lib" path="libs/weibosdkcore.jar"/>
+	<classpathentry kind="lib" path="libs/youitui-point_fat.jar"/>
+	<classpathentry kind="lib" path="libs/youtui-template.jar"/>
+	<classpathentry kind="lib" path="libs/YtCore_fat.jar"/>
+	<classpathentry kind="lib" path="libs/zxing.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/identitytitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/identity"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/identitytitle" >
+
+        <ImageView
+            android:id="@+id/redidentity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/info" />
+
+        <TextView
+            android:id="@+id/identityinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dp"
+            android:layout_toRightOf="@id/redidentity"
+            android:text="@string/confirm_identity"
+            android:textColor="@color/global_black_color"
+            android:textSize="@dimen/global_text_size" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/nameTopLine"
+        android:layout_below="@id/identity"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divide_line_height"
+        android:background="@color/global_line_color" />
+
+    <EditText
+        android:id="@+id/logininname"
+        android:layout_below="@id/nameTopLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入您的真实姓名"
+        android:padding="10dp"
+        android:textSize="@dimen/global_mid_text_size"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/user_identity"   
+        android:background="@color/global_white_color" />
+
+	<View
+		android:id="@+id/nameBottomLine"
+     	android:layout_below="@id/logininname"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divide_line_height"
+        android:background="@color/global_line_color" />
+    <EditText
+        android:id="@+id/logininnumber"
+        android:layout_below="@id/nameBottomLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入18位身份证号码"
+        android:padding="10dp"
+        android:textSize="@dimen/global_mid_text_size"
+        android:drawablePadding="8dp"
+        android:drawableLeft="@drawable/idcard"  
+        android:background="@color/global_white_color"
+        android:digits="0123456789xX"
+        android:maxLength="18"/>
+
+    <View
+        android:id="@+id/numberBottomLine"
+        android:layout_below="@id/logininnumber"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/divide_line_height"
+        android:background="@color/global_line_color" />
+    <TextView
+        android:id="@+id/buttonnext"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/numberBottomLine"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_grey_background"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/global_btn_text_size" />
+
+</RelativeLayout>

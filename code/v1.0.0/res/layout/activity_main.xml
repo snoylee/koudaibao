@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bottom_back_color"
+    android:orientation="vertical" >
+
+    <fragment
+        android:id="@+id/fragment_home"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.kdkj.koudailicai.view.fragment.HomeFragment" />
+
+    <fragment
+        android:id="@+id/fragment_product_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.kdkj.koudailicai.view.fragment.ProductListFragment" />
+
+    <fragment
+        android:id="@+id/fragment_selfcenter"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.kdkj.koudailicai.view.fragment.SelfCenterFragment" />
+
+    <fragment
+        android:id="@+id/fragment_more"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        class="com.kdkj.koudailicai.view.fragment.MoreFragment" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/global_line_color" />
+
+    <com.kdkj.koudailicai.view.fragment.FragmentIndicator
+        android:id="@+id/indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" />
+
+</LinearLayout>
+

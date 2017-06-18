@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+   
+    <RelativeLayout
+        android:id="@+id/rl_verification"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp" >
+
+        <EditText
+            android:id="@+id/et_verification"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/register_verification"
+            android:drawableLeft="@drawable/messagex"
+            android:padding="10dp"
+            android:drawablePadding="8dp"
+            android:singleLine="true" 
+            android:inputType="number"
+            android:textColor="@color/global_black_color"
+		    android:textSize="@dimen/global_mid_text_size"
+            android:maxLength="6" 
+            android:paddingLeft="40dp"/>
+        
+        <TextView
+            android:id="@+id/tv_verification"
+            android:minWidth="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:hint="@string/register_obtain_verification"
+            android:layout_alignRight="@id/et_verification"
+            android:textSize="@dimen/global_mid_text_size"
+            android:gravity="center"
+            android:layout_centerVertical="true" />
+        
+        <View
+            android:layout_width="1dip"
+            android:layout_height="fill_parent"
+            android:layout_alignLeft="@id/tv_verification"
+            android:layout_gravity="center_horizontal"
+            android:background="#999999" />
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/rl_verification"
+        android:layout_marginLeft="20dp"
+		android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/invest_btn_margin_top" >
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="@string/register_password"
+            android:inputType="textPassword"
+            android:singleLine="true" 
+            android:digits="@string/edittext_box"
+            android:drawableLeft="@drawable/key_x"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:maxLength="16"
+            android:minEms="6"
+            android:textColor="@color/global_black_color"
+		    android:textSize="16sp"
+            android:paddingLeft="40dp"
+            android:paddingRight="10dp"/>
+         
+         <ImageView
+            android:id="@+id/iv_password_see"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignRight="@id/et_password"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center"
+            android:src="@drawable/see_unpressed" />
+
+    </RelativeLayout>
+   <RelativeLayout
+		android:id="@+id/rl_agreement"
+		android:layout_below="@id/rl_password"
+		android:layout_width="wrap_content"
+		android:layout_height="45dp"
+		android:layout_alignParentLeft="true">
+		<RelativeLayout
+			android:id="@+id/cb_view"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:paddingLeft="20dp"
+			android:paddingRight="@dimen/invest_time_label_margin_top">	
+			<ImageView 
+				android:id="@+id/cb_agreement"
+			    android:layout_width="18dp"
+			    android:layout_height="18dp"
+			    android:layout_centerVertical="true"
+			    android:layout_alignParentLeft="true"
+			    android:src="@drawable/check_pressed"
+				    />	
+		<!-- <CheckBox
+		    android:id="@+id/cb_agreement"
+		    android:layout_width="18dp"
+		    android:layout_height="18dp"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:background="@drawable/x_checkbox_filter"  
+		    android:button="@null"
+		    android:checked="true" /> -->
+		</RelativeLayout>
+		<TextView 
+			android:id="@+id/tv_agreement"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_toRightOf="@id/cb_view"
+			android:layout_centerVertical="true"
+			android:gravity="center"
+			android:text="我同意《用户使用协议》"
+			android:textSize="@dimen/global_text_size"
+			android:textColor="@color/global_label_color" />				    
+	</RelativeLayout>
+	
+	<TextView
+        android:id="@+id/tv_submit"
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/rl_agreement"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:background="@drawable/btn_grey_background"        
+        android:text="@string/register_submit"
+        android:textColor="@color/global_white_color"
+        android:textSize="@dimen/global_btn_text_size" />
+	<ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/logo" />
+</RelativeLayout>

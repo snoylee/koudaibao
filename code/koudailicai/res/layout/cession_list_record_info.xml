@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/recordView" 
+       	android:background="@color/global_back_black_color"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+	<RelativeLayout
+	    android:id="@+id/recordDetail"
+	    android:layout_marginTop="15dp"
+	    android:paddingTop="15dp"
+	    android:paddingRight="15dp"
+	    android:paddingLeft="15dp"
+	    android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/global_white_color" >
+   	
+		<LinearLayout
+		    android:id="@+id/recordListView"   
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >    	
+			<LinearLayout
+			    android:id="@+id/recordTitle"  
+			    android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+		        <TextView 
+		            android:id="@+id/timeTitle"
+		            android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:textSize="@dimen/global_mid_text_size"
+					android:gravity="left"
+					android:textColor="@color/global_label_color"
+					android:text="最新交易时间" /> 
+		    	 <TextView 
+		       		android:id="@+id/accountTitle"
+					android:layout_width="0dp"				
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				 	android:gravity="left"
+					android:textColor="@color/global_label_color"
+					android:textSize="@dimen/global_mid_text_size"
+					android:text="交易金额（元）"/>
+		   	 	<TextView
+		           	android:id="@+id/aprTitle"  
+		      	    android:gravity="center"
+					android:layout_width="50dp"
+					android:layout_height="wrap_content"
+					android:textColor="@color/global_label_color"
+					android:textSize="@dimen/global_mid_text_size"
+					android:text="利率" />
+			</LinearLayout>
+		    <TextView
+		   	     android:id="@+id/noOracle"
+		   	     android:gravity="center"
+		   	     android:layout_marginTop="10dp"
+		   	     android:layout_width="match_parent"
+		   	     android:layout_height="wrap_content"
+		   	     android:textSize="@dimen/global_mid_text_size"
+		   	     android:visibility="gone"
+		   	     android:textColor="@color/global_label_color"
+		   	     android:text="暂无转让交易"
+		   	     />  
+	 		<LinearLayout
+	 		    android:id="@+id/firstRecord" 
+			    android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:visibility="gone"
+				android:layout_marginTop="10dp"
+				android:orientation="horizontal" >
+		       <TextView 
+		            android:id="@+id/firstTime"
+		            android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="2"
+					android:textSize="@dimen/global_text_size"
+					android:gravity="left"
+					android:textColor="@color/global_label_color"
+					android:text="2014-12-11 16:00" /> 
+		    	 <TextView 
+		       		android:id="@+id/firstAccount"
+					android:layout_width="0dp"				
+					android:layout_height="wrap_content"
+					android:layout_weight="2"
+				 	android:gravity="left"
+					android:textColor="@color/global_black_color"
+					android:textSize="@dimen/global_text_size"
+					android:text="1000000000.00"/>
+		   	 	<TextView
+		           	android:id="@+id/firstApr"  
+		      	    android:gravity="right"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:minWidth="50dp"
+					android:textColor="@color/global_red_color"
+					android:textSize="@dimen/global_text_size"
+					android:text="18.00%" />
+			</LinearLayout>
+	 		<LinearLayout
+	 		    android:id="@+id/secondRecord"  
+			    android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
+				android:visibility="gone"
+				android:orientation="horizontal" >
+		       <TextView 
+		            android:id="@+id/secondTime"
+		            android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="2"
+					android:textSize="@dimen/global_text_size"
+					android:gravity="left"
+					android:textColor="@color/global_label_color"
+					android:text="2014-12-11 16:00" /> 
+		    	 <TextView 
+		       		android:id="@+id/secondAccount"
+					android:layout_width="0dp"				
+					android:layout_height="wrap_content"
+					android:layout_weight="2"
+				 	android:gravity="left"
+					android:textColor="@color/global_black_color"
+					android:textSize="@dimen/global_text_size"
+					android:text="10000000.00"/>
+		   	 	<TextView
+		           	android:id="@+id/secondApr"  
+		      	    android:gravity="right"
+					android:layout_width="wrap_content"
+					android:minWidth="50dp"
+					android:layout_height="wrap_content"
+					android:textColor="@color/global_red_color"
+					android:textSize="@dimen/global_text_size"
+					android:text="18.00%" />
+			</LinearLayout>
+			<LinearLayout
+	 		    android:id="@+id/thirdRecord"  
+			    android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="15dp"
+				android:visibility="gone"
+				android:orientation="horizontal" >
+		       <TextView 
+		            android:id="@+id/thirdTime"
+		            android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="2"
+					android:textSize="@dimen/global_text_size"
+					android:gravity="left"
+					android:textColor="@color/global_label_color"
+					android:text="2014-12-11 16:00" /> 
+		    	 <TextView 
+		       		android:id="@+id/thirdAccount"
+					android:layout_width="0dp"				
+					android:layout_height="wrap_content"
+					android:layout_weight="2"
+				 	android:gravity="left"
+					android:textColor="@color/global_black_color"
+					android:textSize="@dimen/global_text_size"
+					android:text="10000000.00"/>
+		   	 	<TextView
+		           	android:id="@+id/thirdApr"  
+		      	    android:gravity="right"
+					android:layout_width="wrap_content"
+					android:minWidth="50dp"
+					android:layout_height="wrap_content"
+					android:textColor="@color/global_red_color"
+					android:textSize="@dimen/global_text_size"
+					android:text="8.00%" />
+			</LinearLayout>
+	        </LinearLayout>
+			<ImageView
+		    android:id="@+id/tradeRecordIcon"
+		    android:layout_below="@id/recordListView"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dp"
+		    android:layout_alignParentRight="true"
+		    android:background="@drawable/redexpand" />
+	 	</RelativeLayout>
+	 	<TextView 
+        android:id="@+id/itemLabel"
+        android:layout_below="@id/recordDetail"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="15dp"
+		android:paddingBottom="15dp"
+		android:layout_marginLeft="15dp"
+		android:text="转让项目列表"
+		android:textColor="#999999"
+		android:textSize="16sp" />
+ </RelativeLayout>

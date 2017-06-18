@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/global_green_color" >
+<RelativeLayout 
+    android:id="@+id/guidelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ImageView
+        android:id="@+id/guidethree"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/chooseme" />
+    
+
+
+    <TextView 
+        android:id="@+id/threeword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/global_white_color"
+        android:text="口袋宝随取随存，回报率高达8%"
+        android:textSize="16sp"/>
+    
+	<TextView
+        android:id="@+id/threename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/threeword"
+        android:layout_centerHorizontal="true"
+		android:layout_marginBottom="5dp"
+        android:text="选择我"
+        android:textColor="@color/global_white_color"
+        android:textSize="32sp" />
+ </RelativeLayout>       
+</RelativeLayout>

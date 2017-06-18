@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用配色 -->
+    <color name="global_white_color">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="transparent">#000000</color>
+    <color name="gold">#b89766</color>
+    <color name="global_red_color">#fd5353</color>
+    <color name="global_blue_color">#6d96ff</color>
+    <color name="global_green_color">#40dc91</color>
+    <color name="global_black_color">#333333</color>
+    <color name="global_num_black_color">#000000</color>
+    <color name="global_line_color">#dddddd</color>
+    <color name="global_line_weight_color">#bbbbbb</color>
+    <color name="global_back_black_color">#f2f2f2</color>
+    <color name="global_label_color">#999999</color>
+    <color name="global_grey_bth_color">#b7b7b7</color>         
+    <!-- 标题栏 -->
+    <color name="title_back_color">#e7382b</color>
+    <color name="title_text_color">#ffffff</color>
+    <!-- 底部菜单栏 -->
+    <color name="bottom_text_color">#838383</color>
+    <color name="bottom_text_pressed_color">#fd5353</color>
+    <color name="bottom_back_color">#ffffff</color>
+    <!-- 首页 -->
+    <color name="home_global_text_color">#ffffff</color>
+    <color name="home_btn_text_color">#e7382b</color>
+    <color name="home_first_safe_text_color">#94020c</color>
+    <color name="home_first_page_start_color">#ee3838</color>
+    <color name="home_first_page_end_color">#fb6229</color>
+    <color name="home_second_page_start_color">#6b3c9f</color>
+    <color name="home_second_page_end_color">#15b8dc</color>
+    <color name="home_second_safe_text_color">#4767be</color>
+    <color name="home_third_page_start_color">#e3650c</color>
+    <color name="home_third_page_end_color">#fead28</color>
+    <color name="home_third_safe_text_color">#d05c00</color>
+    <!-- 个人中心 -->
+    <color name="selfcenter_global_text_color">#666666</color>
+    <color name="selfcenter_lastday_profit_back_color">#fd5353</color>
+    <color name="selfcenter_divide_line_color">#dddddd</color>
+    <color name="selfcenter_text_red_color">#ff0000</color>
+    <color name="selfcenter_text_bold_black_color">#000000</color>
+    <color name="selfcenter_record_black_color">#f92d2d</color>
+    <color name="selfcenter_left_black_color">#f2f2f2</color>
+    <!-- 持有资产 -->
+    <color name="holdingassets_global_text_color">#ffffff</color>   
+    <color name="holdingassets_lastday_profit_back_color">#ff0007</color>      
+    <color name="holding_asset_second_back_color">#f2f2f2</color>
+    <color name="holding_divide_line_back_color">#b7b7b7</color>
+    <color name="holding_asset_text_size_color">#666666</color>
+    <color name="holding_asset_text_size_one_color">#000000</color>   
+    <color name="holding_asset_text_color">#333333</color>   
+    <color name="holding_asset_interest_start_date_color">#999999</color>   
+  
+       
+    <!-- 產品列表 -->
+    <color name="gray_white">#ebebeb</color>
+    <!-- 口袋宝详情 -->
+    <color name="kdbdetail_label_color">#999999</color>
+    <!--累計收益-->
+    <color name="reminder_color">#ff0007</color>
+    <!-- 账号中心 -->
+    <color name="account_center_real_name">#333333</color>
+    <color name="account_center_real_account">#999999</color>
+    <color name="account_center_on_line_color">#fd5353</color>
+        <!-- 反馈页面配色设置 -->
+    <color name="feedback_back_color">#efefef</color>
+    <color name="feedback_tip_txt">#7e7e7e</color>
+    <color name="feedback_btn_txt_color">#ffffff</color>
+    <color name="feedback_btn_back">#32aaf3</color>
+    <color name="feedback_box_line">#dbdbdb</color>
+    <color name="feedback_box_back_color">#ffffff</color>
+    <!--投资情况 -->
+    <color name="tender_text_nomarl_color">#333333</color>
+    <color name="tender_text_color">#999999</color>
+    <!-- 交易记录 -->
+    <color name="trasaction_record_text_nomarl_color">#333333</color>
+    <color name="trasaction_record_text_color">#999999</color>
+    <color name="yellow">#01b35d</color>
+     <!-- 手势密码 -->
+     <color name="gesture_bottom_label">#ddab8d</color>
+     <color name="gesture_top_label">#ffece5</color>
+     <!-- 自定义toast -->
+     <color name="bright_foreground_dark">#ffffffff</color> 
+</resources>

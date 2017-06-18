@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/buysuccesstitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buysuccesstitle"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/onelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="15dp" >
+
+                <ImageView
+                    android:id="@+id/circle"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/icon1" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/circle"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="28.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#b7b7b7" />
+
+                <RelativeLayout
+                    android:id="@+id/buysuccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/box1" >
+
+                    <RelativeLayout
+                        android:id="@+id/toplayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="40dp" >
+
+                        <TextView
+                            android:id="@+id/buyin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="成功买入"
+                            android:textColor="@color/global_black_color"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/productName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/buyin"
+                            android:layout_toRightOf="@id/buyin"
+                            android:text="安稳袋"
+                            android:textColor="#fd5353"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/buyTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/buyin"
+                            android:layout_below="@id/buyin"
+                            android:layout_marginTop="2dp"
+                            android:text="2014-11-03 9:00"
+                            android:textColor="@color/global_label_color"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/bottomlayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/toplayout"
+                        android:layout_alignParentBottom="true" >
+
+                        <TextView
+                            android:id="@+id/buyhua"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="预期年化"
+                            android:textColor="@color/global_label_color"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/buyApr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/buyhua"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/buyhua"
+                            android:text="8.00%"
+                            android:textColor="#fd5353"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/dealmoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/buyhua"
+                            android:layout_marginTop="2dp"
+                            android:text="交易金额（元）"
+                            android:textColor="@color/global_label_color"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/investAccount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@id/dealmoney"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@id/dealmoney"
+                            android:text="0.00"
+                            android:textColor="@color/global_black_color"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/twolayout"
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:layout_below="@id/onelayout"
+                android:paddingRight="15dp" >
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="3dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="28.5dp"
+                    android:background="#b7b7b7" />
+
+                <ImageView
+                    android:id="@+id/circle1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_below="@id/divider3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon2" />
+
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/circle1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="28.5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#b7b7b7" />
+
+                <RelativeLayout
+                    android:id="@+id/startfee"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/box2" >
+
+                    <TextView
+                        android:id="@+id/startTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="10月24日"
+                        android:textColor="@color/global_black_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/startDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/startTime"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="开始产生收益"
+                        android:textColor="@color/global_label_color"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/threelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="95dp"
+                android:layout_below="@id/twolayout"
+                android:paddingRight="15dp" >
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="3dp"
+                    android:layout_height="27dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="28.5dp"
+                    android:background="#b7b7b7" />
+
+                <ImageView
+                    android:id="@+id/circle2"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_below="@id/divider5"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon2" />
+
+                <RelativeLayout
+                    android:id="@+id/arivefee"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="60dp"
+                    android:background="@drawable/box2" >
+
+                    <TextView
+                        android:id="@+id/arivalTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="10dp"
+                        android:text="10月26日"
+                        android:textColor="@color/global_black_color"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/arivalDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/arivalTime"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="10dp"
+                        android:text="收益到账"
+                        android:textColor="@color/global_label_color"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/buttonHome"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/threelayout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_red_background"
+                android:gravity="center"
+                android:text="返 回"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/global_btn_text_size" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

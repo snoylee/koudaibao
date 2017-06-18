@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/global_back_black_color" >
+	
+	<com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+	
+	<RelativeLayout
+	    android:id="@+id/nav"
+	    android:layout_below="@id/title"
+		android:layout_width="fill_parent"
+	    android:layout_height="50dp">
+	    
+	    <LinearLayout
+	        android:id="@+id/navLabel"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_centerVertical="true"
+	        android:orientation="horizontal" >
+	
+	        <TextView
+	            android:id="@+id/p2pLabel"
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:background="#f2f2f2"
+	            android:gravity="center"
+	            android:text="安稳袋"
+	            android:textColor="@color/global_red_color"
+	            android:textSize="@dimen/productlist_title_label_text_size" />
+	        <TextView 
+	            android:id="@+id/trustLabel"
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:background="#f2f2f2"
+	            android:gravity="center"
+	            android:text="金融袋"
+	            android:textColor="@color/global_label_color"
+	            android:textSize="@dimen/productlist_title_label_text_size"/>
+	        <TextView
+	            android:id="@+id/cessionLabel"
+	            android:layout_width="0dp"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="1"
+	            android:background="#f2f2f2"
+	            android:gravity="center"
+	            android:text="转让袋"
+	            android:textColor="@color/global_label_color"
+	            android:textSize="@dimen/productlist_title_label_text_size"/>
+	    </LinearLayout>
+	    
+		<ImageView 
+	        android:id="@+id/cursor"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:scaleType="matrix"
+	        android:layout_alignParentBottom="true"
+	        android:src="@drawable/redbar" />
+	
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="@dimen/divide_line_height"
+	        android:layout_alignParentBottom="true"
+			android:background="@color/selfcenter_divide_line_color" />
+	</RelativeLayout>
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/viewPager"
+	    android:background="@color/global_back_black_color"
+	    android:layout_below="@id/nav"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    />      
+</RelativeLayout>

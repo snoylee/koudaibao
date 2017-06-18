@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kdkj.koudailicai.lib.ui.RelativeLayout.ResizeRelativeLayout
+    android:id="@+id/parentView" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+	<!-- com.kdkj.koudailicai.lib.ui.RelativeLayout.Resize -->
+	<com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/global_back_black_color"
+        android:layout_below="@id/title"
+        android:scrollbars="none" >
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" >
+			<RelativeLayout
+			    android:id="@+id/topView"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" >
+				<RelativeLayout
+				    android:id="@+id/productInfoView"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content" >
+					<TextView 
+					    android:id="@+id/productName"
+					    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/invest_product_name_margin_top"
+						android:layout_marginLeft="@dimen/invest_margin_left"
+						android:text="口袋宝"
+						android:textSize="@dimen/global_text_size"
+						android:textColor="@color/global_black_color" />
+					<RelativeLayout
+					    android:id="@+id/aprView"
+					    android:layout_below="@id/productName"
+					    android:layout_alignLeft="@id/productName"
+						android:layout_width="180dp"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/invest_min_account_view_margin_top" >
+						<TextView 
+						    android:id="@+id/aprLabel"
+						    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentLeft="true"
+							android:text="@string/invest_apr_label"
+							android:textSize="@dimen/global_text_size"
+							android:textColor="@color/global_label_color" />
+						<TextView 
+						    android:id="@+id/apr"
+						    android:layout_toRightOf="@id/aprLabel"
+						    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignBottom="@id/aprLabel"
+							android:text="18%"
+							android:textSize="@dimen/global_text_size"
+							android:textColor="@color/global_label_color" />
+						<TextView 
+						    android:id="@+id/feeLabel"
+						    android:layout_below="@id/aprLabel"
+						    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentLeft="true"
+							android:layout_marginTop="@dimen/invest_time_label_margin_top"
+							android:text="@string/invest_fee_label"
+							android:textSize="@dimen/global_text_size"
+							android:textColor="@color/global_label_color" />
+						<TextView 
+						    android:id="@+id/fee"
+						    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+						    android:layout_toRightOf="@id/feeLabel"					
+							android:layout_alignBottom="@id/feeLabel"
+							android:text="5000元"
+							android:textSize="@dimen/global_text_size"
+							android:textColor="@color/global_label_color" />
+					</RelativeLayout>
+					<RelativeLayout
+					    android:id="@+id/minAccountView"
+					    android:layout_alignBottom="@id/aprView"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/aprView" >	
+						<TextView 
+						    android:id="@+id/timeLabel"
+						    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_alignParentLeft="true"
+							android:text="@string/invest_time_label"
+							android:textSize="@dimen/global_text_size"
+							android:textColor="@color/global_label_color" />
+						<TextView 
+						    android:id="@+id/time"
+						    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_toRightOf="@id/timeLabel"
+							android:layout_alignBottom="@id/timeLabel"
+							android:text="1个月"
+							android:textSize="@dimen/global_text_size"
+							android:textColor="@color/global_label_color" />
+						<TextView 
+						    android:id="@+id/minAccountLabel"
+						    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_below="@id/timeLabel"
+							android:layout_alignParentLeft="true"
+							android:layout_marginTop="@dimen/invest_time_label_margin_top"
+							android:text="@string/invest_min_account_label"
+							android:textSize="@dimen/global_text_size"
+							android:textColor="@color/global_label_color" />
+						<TextView 
+						    android:id="@+id/minAccount"
+						    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+						    android:layout_toRightOf="@id/minAccountLabel"					
+							android:layout_alignBottom="@id/minAccountLabel"
+							android:text="50元"
+							android:textSize="@dimen/global_text_size"
+							android:textColor="@color/global_label_color" />
+					</RelativeLayout>												
+				</RelativeLayout>
+				<RelativeLayout
+				    android:id="@+id/investAccountView"
+					android:layout_width="fill_parent"
+					android:layout_height="50dp"
+					android:layout_below="@id/productInfoView"
+					android:layout_marginTop="@dimen/invest_invest_account_view_margin_top"
+					android:background="@color/global_white_color" >
+					<TextView 
+					    android:id="@+id/investAccountLabel"
+					    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="@dimen/invest_margin_left"
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true"
+						android:text="@string/invest_account_label"
+						android:textSize="@dimen/invest_global_text_size"
+						android:textColor="@color/global_black_color" />
+					<EditText 
+					    android:id="@+id/investAccount"
+					    android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/investAccountLabel"
+						android:layout_marginLeft="@dimen/invest_invest_account_view_margin_top"
+						android:layout_centerVertical="true"
+						android:inputType="numberDecimal"
+						android:maxLength="12"
+						android:hint="@string/invest_account_hint"
+						android:background="@color/global_white_color"
+						android:textColorHint="@color/global_label_color"
+						android:textSize="@dimen/invest_global_text_size"
+						android:textColor="@color/global_black_color" />
+					<View
+				       	android:layout_width="fill_parent"
+				       	android:layout_height="@dimen/divide_line_height"
+				       	android:layout_alignParentTop="true"
+				       	android:background="@color/selfcenter_divide_line_color" />
+					<View
+				       	android:layout_width="fill_parent"
+				       	android:layout_height="@dimen/divide_line_height"
+				       	android:layout_alignParentBottom="true"
+				       	android:background="@color/selfcenter_divide_line_color" />																
+				</RelativeLayout>
+				<RelativeLayout
+				    android:id="@+id/investTipView"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/investAccountView">
+
+					<RelativeLayout
+					    android:id="@+id/investFirstTipView"
+						android:layout_width="fill_parent"
+						android:layout_marginTop="10dp"
+						android:layout_height="30dp"
+						android:visibility="gone" >
+						<CheckBox
+				            android:id="@+id/balancePayCheckBox"
+				            android:layout_width="14dp"
+				    		android:layout_height="14dp"
+				            android:layout_centerVertical="true"
+				            android:layout_alignParentLeft="true"
+				            android:layout_marginLeft="@dimen/invest_margin_left"
+				            android:background="@drawable/x_checkbox_filter"  
+				        	android:button="@null"
+				            android:checked="false" />
+						<TextView 
+						    android:id="@+id/balancePayTip"
+						    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="35dp"
+							android:layout_centerVertical="true"
+							android:text="投入全部余额：0.00元"
+							android:textSize="@dimen/global_mid_text_size"
+							android:textColor="@color/global_label_color" />			    
+					</RelativeLayout>
+					<RelativeLayout
+					    android:id="@+id/investSecondTipView"
+					  	android:layout_below="@id/investFirstTipView"
+					  	android:visibility="gone"
+					  	android:layout_marginTop="5dp"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content" >
+						<ImageView 
+					        android:id="@+id/investTipSecondIcon"
+					        android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginLeft="20dp"
+							android:layout_alignParentLeft="true"
+				    		android:layout_centerVertical="true"
+					        android:background="@drawable/dot"/>
+						<TextView 
+						    android:id="@+id/investTipSecond"
+						    android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_centerVertical="true"
+							android:layout_marginLeft="35dp"
+							android:text="起投金额为50元的整数倍"
+							android:textSize="@dimen/global_text_size"
+							android:textColor="@color/global_label_color" />				    
+					</RelativeLayout>														
+				</RelativeLayout>
+					
+				<RelativeLayout
+				    android:id="@+id/investBtnView"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_below="@id/investTipView"
+				    android:layout_marginTop="@dimen/invest_btn_margin_top"
+				    android:layout_marginLeft="@dimen/invest_margin_left"
+				    android:layout_marginRight="@dimen/invest_margin_left" >
+		
+					<TextView
+				        android:id="@+id/investBtn"
+				        android:layout_height="45dp"
+				        android:layout_width="fill_parent"
+				        android:layout_centerVertical="true"
+				        android:layout_centerHorizontal="true"
+				        android:gravity="center"
+				        android:background="@drawable/btn_grey_background"        
+				        android:text="@string/invest_next_label"
+				        android:textColor="@color/global_white_color"
+				        android:textSize="@dimen/global_btn_text_size" />
+			    </RelativeLayout>			
+				<RelativeLayout
+				    android:id="@+id/safeTipView"
+				    android:layout_below="@id/investBtnView"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="@dimen/invest_min_account_view_margin_top" >
+					<ImageView 
+				        android:id="@+id/safeTipIcon"
+				        android:layout_width="wrap_content"
+			    		android:layout_height="wrap_content"
+			    		android:layout_marginLeft="@dimen/invest_margin_left"
+						android:layout_alignParentLeft="true"
+			    		android:layout_centerVertical="true"
+				        android:background="@drawable/bao_grey"/>
+					<TextView 
+					    android:id="@+id/safeTip"
+					    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_toRightOf="@id/safeTipIcon"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="@dimen/invest_time_label_margin_top"
+						android:text="@string/kdbdetail_safe_label"
+						android:textSize="@dimen/global_text_size"
+						android:textColor="@color/global_label_color" />				    
+				</RelativeLayout>
+			</RelativeLayout>
+			<RelativeLayout
+			    android:layout_below="@id/topView"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content" >
+				<View
+				    android:id="@+id/bottomView"  
+	                android:layout_width="fill_parent"  
+	                android:layout_height="0dp" /> 
+			</RelativeLayout>							
+		</RelativeLayout>
+	</ScrollView>
+</com.kdkj.koudailicai.lib.ui.RelativeLayout.ResizeRelativeLayout>

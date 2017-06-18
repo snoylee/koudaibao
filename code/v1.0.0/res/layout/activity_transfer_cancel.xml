@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/canceltitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/cancellayout"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/canceltitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shapestroke5" >
+
+        <ImageView
+            android:id="@+id/cancelview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/cancelbtn" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/cancelview" 
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/cancelname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目"
+                android:textColor="@color/global_black_color"
+                android:textSize="@dimen/global_mid_text_size" />
+
+            <TextView
+                android:id="@+id/cancellabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cancelname"
+                android:layout_alignLeft="@id/cancelname"
+                android:text="转让取消成功"
+                android:textColor="@color/global_label_color"
+                android:textSize="@dimen/global_mid_text_size" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cancelbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/cancellayout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_red_background"
+        android:gravity="center"
+        android:text="返回"
+        android:textColor="@color/global_white_color"
+        android:textSize="@dimen/invest_global_text_size" />
+
+</RelativeLayout>

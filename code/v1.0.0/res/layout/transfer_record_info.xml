@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/global_white_color" >
+    <RelativeLayout
+		android:id="@+id/rl_total"
+		android:layout_width="wrap_content"
+		android:layout_height="60dp"
+		android:layout_centerHorizontal="true"
+		android:gravity="center_horizontal"
+		android:background="@color/global_white_color" >
+		<TextView 
+		    android:id="@+id/tv_total"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:text="累计记录："
+		    android:textColor="@color/account_center_real_name"
+		    android:textSize="18sp" 
+		    />	
+		 <TextView
+		    android:id="@+id/tv_total_number"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/tv_total"
+		    android:layout_centerVertical="true"
+		    android:text="0"
+		    android:textColor="@color/global_red_color"
+		    android:textSize="18sp" />
+		<TextView
+		    android:id="@+id/tv_account_real"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/tv_total_number"
+		    android:layout_centerVertical="true"
+		    android:text="条"
+		    android:textColor="@color/account_center_real_name"
+		    android:textSize="18sp" />
+	</RelativeLayout>
+	<View
+	    android:id="@+id/view_line"
+	    android:layout_below="@id/rl_total"
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/divide_line_height"
+	    android:layout_marginLeft="16dp"
+	    android:layout_marginRight="16dp"
+	    android:background="@color/global_line_color" />	
+	<RelativeLayout 
+	    android:id="@+id/rl_title"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/view_line"
+	    android:layout_marginTop="15dp"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp"
+	    android:background="@color/global_white_color"
+	    >
+		<LinearLayout
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="8dp"
+			android:orientation="horizontal" >
+			<TextView 
+	            android:id="@+id/tv_time"
+	            android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:textSize="@dimen/global_mid_text_size"
+				android:gravity="left"
+				android:textColor="@color/global_label_color"
+				android:text="交易时间" /> 
+	    	 <TextView 
+	       		android:id="@+id/tv_money"
+				android:layout_width="0dp"				
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			 	android:gravity="left"
+				android:textColor="@color/global_label_color"
+				android:textSize="@dimen/global_mid_text_size"
+				android:text="交易金额（元）"/>
+	   	 	<TextView
+	           	android:id="@+id/tv_interest_rate"  
+	      	    android:gravity="center"
+				android:layout_width="50dp"
+				android:layout_height="wrap_content"
+				android:textColor="@color/global_label_color"
+				android:textSize="@dimen/global_mid_text_size"
+				android:text="利率" />
+		 </LinearLayout>
+	   <!-- <TextView 
+		    android:id="@+id/tv_time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="16dp"
+		    android:text="交易时间"
+		    android:textColor="@color/selfcenter_divide_line_color"
+		    android:textSize="16sp" 
+		    />	
+		 <TextView
+		    android:id="@+id/tv_money"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerInParent="true"
+		    android:text="交易金额(元)"
+		    android:textColor="@color/selfcenter_divide_line_color"
+		    android:textSize="16sp" />
+		<TextView
+		    android:id="@+id/tv_interest_rate"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_marginRight="18dp"
+		    android:layout_centerVertical="true"
+		    android:text="利率"
+		    android:textColor="@color/selfcenter_divide_line_color"
+		    android:textSize="16sp" />  -->
+		   
+	</RelativeLayout>
+
+</RelativeLayout>

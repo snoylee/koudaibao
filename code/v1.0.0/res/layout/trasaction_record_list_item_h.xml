@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/global_white_color"
+    android:layout_gravity="center_horizontal"
+	     >
+	    <LinearLayout 
+	    android:id="@+id/linearLone"  
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginTop="12dp"
+	    android:gravity="center_vertical"
+	    android:orientation="vertical">
+	    <TextView 
+	        android:id="@+id/project_name" 
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textSize="@dimen/trasaction_record_mid_size"
+	    	android:textColor="@color/trasaction_record_text_nomarl_color"
+	    	android:text="@string/project_name_label">
+	    </TextView>
+	    <LinearLayout 
+	        android:id="@+id/linteo"
+	        android:layout_marginTop="@dimen/trasaction_record_h_linteo" 
+          	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_marginBottom="@dimen/trasaction_record_h_linteo"
+	    	android:orientation="horizontal">
+	   <!--  	 <TextView 
+	      	android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		   	android:textSize="@dimen/trasaction_record_small_size"
+		   	android:textColor="@color/trasaction_record_text_color"
+	    	android:text="起息日：">
+	    </TextView> -->
+	    	 <TextView 
+	    	    android:id="@+id/interest_start_date"
+	            android:layout_width="wrap_content"
+	   		 	android:layout_height="wrap_content"
+   		 		android:textSize="@dimen/trasaction_record_small_size"
+	   			android:textColor="@color/trasaction_record_text_color"
+	    		android:text="@string/interest_start_date_value">
+	    </TextView>
+	    </LinearLayout>
+	    </LinearLayout>
+
+	    <LinearLayout
+	        android:id="@+id/linearLoneTwo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignTop="@+id/linearLone"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="15dp"
+	        android:gravity="right"
+	        android:orientation="vertical" >
+
+	        <TextView
+	            android:id="@+id/investMoney"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="年化啊实打实的"
+	            android:textColor="@color/trasaction_record_text_nomarl_color"
+	            android:textSize="@dimen/trasaction_record_mid_size" />
+
+	        <TextView
+	            android:id="@+id/statusLabel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+				android:layout_marginBottom="@dimen/trasaction_record_h_linteo"
+	            android:layout_marginTop="@dimen/trasaction_record_h_linteo"
+	            android:text="@string/statusLabel_value"
+	            android:textColor="@color/trasaction_record_text_color"
+	            android:textSize="@dimen/trasaction_record_small_size" />
+	    </LinearLayout>
+	    <View
+		    android:id="@+id/view_line"
+		    android:layout_width="wrap_content"
+		    android:layout_height="@dimen/divide_line_height"
+		    android:layout_alignParentBottom="true"
+		    android:background="@color/global_line_color" />
+
+</RelativeLayout>
+

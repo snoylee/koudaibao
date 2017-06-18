@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/selfcenter_left_black_color"
+    android:orientation="vertical" >
+	
+	<com.kdkj.koudailicai.lib.ui.TitleView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+	<!-- com.kdkj.koudailicai.lib.ui.pulltorefresh.PullToRefresh -->
+    <com.kdkj.koudailicai.lib.ui.pulltorefresh.PullToRefreshScrollView
+        android:id="@+id/refresh_root"
+        android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/title"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none" >
+           	<RelativeLayout
+           	    android:id="@+id/kdbInfoView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" >	
+				<RelativeLayout
+					android:id="@+id/baseInfoView"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:background="@color/global_back_black_color" >
+					    <TextView 
+					        android:id="@+id/aprLabel"
+					        android:layout_width="wrap_content"
+				    		android:layout_height="wrap_content"
+				    		android:layout_marginTop="30dp"
+				    		android:layout_centerHorizontal="true"
+					        android:text="@string/kdbdetail_apr_label"
+					        android:textSize="@dimen/global_text_size"
+					        android:textColor="@color/kdbdetail_label_color" />
+					    <RelativeLayout
+					        android:id="@+id/aprView"
+					        android:layout_below="@id/aprLabel"
+			                android:layout_width="wrap_content"
+					    	android:layout_centerHorizontal="true"			                
+			                android:layout_height="wrap_content" >
+						    <TextView 
+						        android:id="@+id/apr"
+						        android:layout_width="wrap_content"
+					    		android:layout_height="wrap_content"
+						        android:text="8.00"
+						        android:textSize="@dimen/kdbdetail_apr_text_size"
+						        android:textColor="@color/global_red_color" />
+	
+							<TextView
+							    android:id="@+id/aprPercent"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:layout_alignBaseline="@+id/apr"
+							    android:layout_alignBottom="@+id/apr"
+							    android:layout_toRightOf="@+id/apr"
+							    android:text="@string/kdbdetail_percent_label"
+							    android:textColor="@color/global_red_color"
+							    android:textSize="@dimen/kdbdetail_apr_percent_text_size" />
+						</RelativeLayout>
+						<RelativeLayout
+					        android:id="@+id/numView"
+					        android:layout_below="@id/aprView"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:paddingLeft="20dp"
+			                android:paddingRight="20dp"
+			                android:layout_centerHorizontal="true"
+			                android:gravity="center" >
+							<TextView 
+						        android:id="@+id/investNum"
+						        android:layout_width="wrap_content"
+					    		android:layout_height="wrap_content"
+						        android:text="0人"
+						        android:textSize="@dimen/global_text_size"
+						        android:textColor="@color/global_red_color" />
+							<TextView
+							    android:id="@+id/investNumlabel"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:layout_alignBaseline="@+id/investNum"
+							    android:layout_alignBottom="@+id/investNum"
+							    android:layout_toRightOf="@+id/investNum"
+							    android:text="@string/kdbdetail_invest_num_label"
+							    android:textColor="@color/global_black_color"
+							    android:textSize="@dimen/global_text_size" />
+						</RelativeLayout>
+						<RelativeLayout
+					        android:id="@+id/tipView"
+					        android:layout_below="@id/numView"
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+			                android:layout_centerHorizontal="true"
+			                android:layout_marginTop="20dp"
+			                android:layout_marginLeft="15dp"
+			                android:layout_marginRight="15dp"
+			                android:paddingTop="5dp"
+			                android:paddingBottom="5dp"
+			                android:gravity="center"
+			                android:background="@drawable/tip_back" >
+							<TextView 
+						        android:id="@+id/accountTip"
+						        android:layout_width="wrap_content"
+					    		android:layout_height="wrap_content"
+						        android:text="50元起购"
+						        android:textSize="@dimen/global_text_size"
+						        android:textColor="@color/kdbdetail_label_color" />
+							<TextView
+							    android:id="@+id/accountTipLine"
+				                android:layout_height="wrap_content"
+				                android:layout_width="wrap_content"
+				                android:layout_toRightOf="@id/accountTip"
+				                android:layout_marginLeft="5dp"
+				                android:layout_marginRight="5dp"
+				                android:layout_alignBottom="@id/accountTip"
+				                android:layout_alignBaseline="@id/accountTip"
+				                android:text="@string/kdbdetail_tip_divide_line"
+						        android:textSize="@dimen/global_text_size"
+						        android:textColor="@color/kdbdetail_label_color" />
+							<TextView
+							    android:id="@+id/timeTip"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:layout_toRightOf="@+id/accountTipLine"
+							    android:text="随取随存"
+							    android:textColor="@color/kdbdetail_label_color"
+							    android:textSize="@dimen/global_text_size" />
+							<TextView
+							    android:id="@+id/timeTipLine"
+				                android:layout_height="wrap_content"
+				                android:layout_width="wrap_content"
+				                android:layout_toRightOf="@id/timeTip"
+				                android:layout_marginLeft="5dp"
+				                android:layout_marginRight="5dp"
+				                android:layout_alignBottom="@id/timeTip"
+				                android:layout_alignBaseline="@id/timeTip"				                
+				                android:text="@string/kdbdetail_tip_divide_line"
+						        android:textSize="@dimen/global_text_size"
+						        android:textColor="@color/kdbdetail_label_color" />
+							<TextView
+							    android:id="@+id/profitsTip"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:layout_toRightOf="@+id/timeTipLine"
+							    android:text="一个工作日后起息"
+							    android:textColor="@color/kdbdetail_label_color"
+							    android:textSize="@dimen/global_text_size" />
+						</RelativeLayout>
+						<RelativeLayout
+					        android:id="@+id/safeView"
+					        android:layout_below="@id/tipView"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_centerHorizontal="true"
+			                android:layout_marginTop="10dp" >
+							<ImageView 
+						        android:id="@+id/safeIcon"
+						        android:layout_width="wrap_content"
+					    		android:layout_height="wrap_content"
+					    		android:layout_centerVertical="true"
+						        android:background="@drawable/bao"/>
+							<TextView
+							    android:id="@+id/safeTip"
+							    android:layout_width="wrap_content"
+							    android:layout_height="wrap_content"
+							    android:layout_toRightOf="@+id/safeIcon"
+							    android:layout_centerVertical="true"
+							    android:layout_marginLeft="5dp"
+							    android:text="@string/kdbdetail_safe_label"
+							    android:textColor="@color/global_black_color"
+							    android:textSize="@dimen/global_text_size" />
+						</RelativeLayout>
+				</RelativeLayout>
+			
+				<RelativeLayout
+				    android:id="@+id/computeProfitsView"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_below="@+id/baseInfoView"
+				    android:background="@drawable/editbox_white_back" >
+					<RelativeLayout
+				        android:id="@+id/computeTitleView"
+		                android:layout_width="fill_parent"
+		                android:layout_height="50dp" >
+					    <TextView
+					        android:id="@+id/computeProfitsTitle"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_centerVertical="true"
+					        android:layout_marginLeft="20dp"
+					        android:text="@string/kdbdetail_compute_title"
+					        android:textColor="@color/kdbdetail_label_color"
+					        android:textSize="@dimen/global_text_size" />
+	
+				    	<View
+				    	    android:id="@+id/computeTitleLine"
+			               	android:layout_width="fill_parent"
+			               	android:layout_height="@dimen/divide_line_height"
+			               	android:layout_alignParentBottom="true"
+			               	android:layout_marginLeft="15dp"
+			               	android:layout_marginRight="15dp"
+			               	android:background="@color/selfcenter_divide_line_color" />
+				    </RelativeLayout>
+				    <RelativeLayout
+				        android:id="@+id/computeView"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_below="@+id/computeTitleView" >
+				    	<RelativeLayout
+					        android:id="@+id/computeAccountView"
+			                android:layout_width="100dp"
+			                android:layout_height="wrap_content">
+						    <TextView
+						        android:id="@+id/bankProfits"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:text="@string/kdbdetail_compute_account_label"
+						        android:textColor="@color/global_black_color"
+						        android:textSize="@dimen/global_text_size" />
+						    <EditText
+						        android:id="@+id/computeAccount"
+						        android:layout_width="fill_parent"
+						        android:layout_height="wrap_content"
+						        android:background="@drawable/editbox_white_back"
+						        android:paddingTop="8dp"
+						        android:paddingBottom="8dp"
+						        android:paddingLeft="5dp"
+						        android:layout_marginTop="7dp"
+						        android:layout_below="@id/bankProfits"
+						        android:singleLine="true"
+						        android:gravity="left"
+						        android:inputType="number"
+						        android:maxLength="9"
+						        android:textColor="@color/global_black_color"
+						        android:textSize="@dimen/global_text_size" />
+						</RelativeLayout>
+
+						<RelativeLayout
+					        android:id="@+id/computeDayView"
+			                android:layout_width="100dp"
+			                android:layout_height="wrap_content"
+			                android:layout_toRightOf="@id/computeAccountView"
+					        android:layout_alignBaseline="@id/computeAccountView" >
+						<TextView
+					        android:id="@+id/bankProfitsTimes"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:text="@string/kdbdetail_compute_days_label"
+					        android:textColor="@color/global_black_color"
+					        android:textSize="@dimen/global_text_size" />
+						<EditText
+					        android:id="@+id/computeDay"
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:background="@drawable/editbox_white_back"
+					        android:layout_below="@id/bankProfitsTimes"
+					        android:paddingTop="8dp"
+					        android:paddingBottom="8dp"
+					        android:paddingLeft="5dp"
+					        android:layout_marginTop="7dp"
+					        android:inputType="number"
+					        android:singleLine="true"
+					        android:gravity="left"
+					        android:maxLength="9"
+					        android:textColor="@color/global_black_color"
+					        android:textSize="@dimen/global_text_size" />
+						</RelativeLayout>
+						<RelativeLayout
+					        android:id="@+id/profitsView"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_marginTop="2dp"
+			                android:layout_marginBottom="2dp"
+			                android:layout_below="@id/computeAccountView"
+					        android:layout_alignBaseline="@id/computeAccountView" >
+							<TextView
+						        android:id="@+id/profitsLabel"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_centerVertical="true"
+						        android:text="@string/kdbdetail_compute_profits_label"
+						        android:textColor="@color/global_black_color"
+						        android:textSize="@dimen/global_text_size" />
+							<TextView
+						        android:id="@+id/profits"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_centerVertical="true"
+						        android:layout_toRightOf="@id/profitsLabel"
+						        android:layout_marginLeft="5dp"
+						        android:text="687.99"
+						        android:textColor="@color/global_red_color"
+						        android:textSize="@dimen/kdbdetail_profits_text_size" />
+						</RelativeLayout>
+
+<!-- 						<TextView
+						    android:id="@+id/computeProfitsBtn"
+						    android:layout_width="70dp"
+						    android:layout_height="wrap_content"
+						    android:layout_alignBottom="@id/computeDayView"
+						    android:layout_marginRight="15dp"
+						    android:layout_alignParentRight="true"
+						    android:background="@drawable/btn_red_background"
+						    android:paddingTop="8dp"
+						    android:paddingBottom="8dp"
+						    android:gravity="center"
+						    android:text="预估收益"
+						    android:textColor="@color/global_white_color"
+						    android:textSize="@dimen/global_text_size" /> -->
+
+						<View
+						    android:id="@+id/computeProfitsLine"
+			               	android:layout_width="fill_parent"
+			               	android:layout_height="@dimen/divide_line_height"
+			               	android:layout_alignParentBottom="true"
+			               	android:background="@color/selfcenter_divide_line_color" />
+				    </RelativeLayout>
+				    <RelativeLayout
+				        android:id="@+id/computeBankView"
+		                android:layout_width="fill_parent"
+		                android:layout_height="40dp"
+		                android:layout_below="@+id/computeView" >
+					    <TextView
+					        android:id="@+id/bankProfitsAccount"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_centerVertical="true"
+					        android:text="银行活期利息35元，是银行利息的"
+					        android:textColor="@color/kdbdetail_label_color"
+					        android:textSize="@dimen/global_text_size" />
+						<TextView
+					        android:id="@+id/bankProfitsAccountTimes"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_toRightOf="@id/bankProfitsAccount"
+					        android:layout_alignTop="@id/bankProfitsAccount"
+					        android:text="18倍"
+					        android:textColor="@color/global_black_color"
+					        android:textSize="@dimen/global_text_size" />
+				    </RelativeLayout>
+				</RelativeLayout>
+				<RelativeLayout
+				    android:id="@+id/productDetailView"
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_below="@+id/computeProfitsView"
+				    android:background="@color/global_white_color" >
+					<RelativeLayout
+				        android:id="@+id/productTypeView"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content" >
+						<RelativeLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_marginTop="15dp"
+			                android:layout_marginBottom="15dp"
+			                android:layout_centerVertical="true" >
+						    <TextView
+						        android:id="@+id/productTypeLabel"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_marginLeft="20dp"
+						        android:text="@string/kdbdetail_product_type_label"
+						        android:textColor="@color/global_black_color"
+						        android:textSize="@dimen/global_text_size" />
+						    <TextView
+						        android:id="@+id/productType"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_below="@id/productTypeLabel"
+						        android:layout_alignLeft="@id/productTypeLabel"
+						        android:layout_marginTop="8dp"
+						        android:text="债券转让"
+						        android:textColor="@color/kdbdetail_label_color"
+						        android:textSize="@dimen/global_text_size" />
+						</RelativeLayout>
+	
+				    	<View
+			               	android:layout_width="fill_parent"
+			               	android:layout_height="@dimen/divide_line_height"
+			               	android:layout_alignParentBottom="true"
+			               	android:layout_marginLeft="15dp"
+			               	android:layout_marginRight="15dp"
+			               	android:background="@color/selfcenter_divide_line_color" />
+				    </RelativeLayout>
+					<RelativeLayout
+				        android:id="@+id/productDescView"
+				        android:layout_below="@id/productTypeView"
+				        android:layout_marginRight="15dp"
+				        android:layout_marginLeft="15dp"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content" 
+		                android:background="@drawable/global_click_selector">
+						<RelativeLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_marginTop="15dp"
+			                android:layout_marginBottom="15dp"
+			                android:layout_centerVertical="true" >
+						    <TextView
+						        android:id="@+id/productDescLabel"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_marginLeft="5dp"
+						        android:layout_marginBottom="8dp"
+						        android:text="@string/kdbdetail_product_desc_label"
+						        android:textColor="@color/global_black_color"
+						        android:textSize="@dimen/global_text_size" />
+						    <TextView
+						        android:id="@+id/productDesc"
+						        android:layout_width="fill_parent"
+						        android:layout_height="wrap_content"
+						        android:layout_below="@id/productDescLabel"
+						        android:layout_marginLeft="5dp"
+						        android:layout_marginRight="15dp"
+						        android:text="借款人借款人借款人借款人借款人借款人借款人借款人借款人"
+						        android:textColor="@color/kdbdetail_label_color"
+						        android:textSize="@dimen/global_text_size" />
+						</RelativeLayout>
+				    	<View
+				    	    android:id="@+id/producDescLine"
+			               	android:layout_width="fill_parent"
+			               	android:layout_height="@dimen/divide_line_height"
+			               	android:layout_alignParentBottom="true"
+			               	android:background="@color/selfcenter_divide_line_color" />
+				    	<ImageView
+				    	    android:layout_width="wrap_content"
+				    	    android:layout_height="wrap_content"
+				    	    android:layout_alignParentBottom="true"
+				    	    android:layout_alignRight="@id/producDescLine"
+				    	    android:background="@drawable/redexpand" />
+				    </RelativeLayout>
+					<RelativeLayout
+				        android:id="@+id/riskMeasuresView"
+				        android:layout_below="@id/productDescView"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="15dp"
+		                android:layout_marginRight="15dp"
+		                android:background="@drawable/global_click_selector" >
+						<RelativeLayout
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:layout_marginTop="15dp"
+			                android:layout_marginBottom="15dp"
+			                android:layout_centerVertical="true" >
+						    <TextView
+						        android:id="@+id/riskMeasuresLabel"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_marginLeft="5dp"
+						        android:text="@string/kdbdetail_risk_measures_label"
+						        android:textColor="@color/global_black_color"
+						        android:textSize="@dimen/global_text_size" />
+						    <RelativeLayout
+						        android:id="@+id/fundsTrustView"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_below="@id/riskMeasuresLabel"
+				                android:layout_marginTop="5dp"
+				                android:layout_alignLeft="@id/riskMeasuresLabel"
+				                android:layout_centerVertical="true" >
+				                <ImageView 
+							        android:id="@+id/fundsTrustIcon"
+							        android:layout_width="wrap_content"
+						    		android:layout_height="wrap_content"
+						    		android:layout_centerVertical="true"
+							        android:background="@drawable/tuo"/>
+				                <TextView
+							        android:id="@+id/fundsTrustTip"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:layout_toRightOf="@id/fundsTrustIcon"
+							        android:layout_centerVertical="true"
+							        android:layout_marginLeft="5dp"
+							        android:text="资金第三方托管"
+							        android:textColor="@color/kdbdetail_label_color"
+							        android:textSize="@dimen/global_text_size" />
+							</RelativeLayout>
+						    <RelativeLayout
+						        android:id="@+id/tradeGuarView"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_below="@id/fundsTrustView"
+				                android:layout_marginTop="5dp"
+				                android:layout_alignLeft="@id/fundsTrustView"
+				                android:layout_centerVertical="true" >
+				                <ImageView 
+							        android:id="@+id/tradeGuarIcon"
+							        android:layout_width="wrap_content"
+						    		android:layout_height="wrap_content"
+						    		android:layout_centerVertical="true"
+							        android:background="@drawable/bao"/>
+				                <TextView
+							        android:id="@+id/tradeGuarTip"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:layout_toRightOf="@id/tradeGuarIcon"
+							        android:layout_centerVertical="true"
+							        android:layout_marginLeft="5dp"
+							        android:text="交易有第三方担保公司担保"
+							        android:textColor="@color/kdbdetail_label_color"
+							        android:textSize="@dimen/global_text_size" />
+							</RelativeLayout>
+						   	<RelativeLayout
+						        android:id="@+id/fundsSpotView"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_below="@id/tradeGuarView"
+				                android:layout_marginTop="5dp"
+				                android:layout_alignLeft="@id/tradeGuarView"
+				                android:layout_centerVertical="true" >
+				                <ImageView 
+							        android:id="@+id/fundsSpotIcon"
+							        android:layout_width="wrap_content"
+						    		android:layout_height="wrap_content"
+						    		android:layout_centerVertical="true"
+							        android:background="@drawable/dian"/>
+				                <TextView
+							        android:id="@+id/fundsSpotTip"
+							        android:layout_width="wrap_content"
+							        android:layout_height="wrap_content"
+							        android:layout_toRightOf="@id/fundsSpotIcon"
+							        android:layout_centerVertical="true"
+							        android:layout_marginLeft="5dp"
+							        android:text="平台无条件本息垫付"
+							        android:textColor="@color/kdbdetail_label_color"
+							        android:textSize="@dimen/global_text_size" />
+
+							</RelativeLayout>
+														
+						</RelativeLayout>
+							<ImageView
+							    android:id="@+id/riskBottomIcon"
+					    	    android:layout_width="wrap_content"
+					    	    android:layout_height="wrap_content"
+					    	    android:layout_alignParentRight="true"
+					    	    android:layout_alignParentBottom="true"
+					    	    android:background="@drawable/redexpand" />
+ 						<View
+			               	android:layout_width="fill_parent"
+			               	android:layout_height="@dimen/divide_line_height"
+			               	android:layout_alignParentBottom="true"
+			               	android:background="@color/selfcenter_divide_line_color" />
+				    </RelativeLayout>
+				    <RelativeLayout
+				        android:id="@+id/instructionView"
+				        android:layout_below="@id/riskMeasuresView"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_margin="15dp"
+		                android:background="@drawable/global_click_selector" >
+					    <TextView
+					        android:id="@+id/instructionLabel"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+		                	android:layout_marginBottom="8dp"
+					        android:layout_marginLeft="5dp"
+					        android:text="@string/kdbdetail_instruction_label"
+					        android:textColor="@color/global_black_color"
+					        android:textSize="@dimen/global_text_size" />
+					    <TextView
+					        android:id="@+id/instructionText"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_below="@id/instructionLabel"
+					        android:layout_marginLeft="5dp"
+					        android:text="@string/kdbdetail_instruction_label"
+					        android:textColor="@color/global_label_color"
+					        android:textSize="@dimen/global_text_size" />					    
+				    </RelativeLayout>
+				    <RelativeLayout
+					    android:id="@+id/subBtnView"
+					    android:layout_width="fill_parent"
+					    android:layout_height="80dp"
+					    android:layout_below="@id/instructionView"
+					    android:background="@color/global_white_color" >
+					</RelativeLayout>	
+				</RelativeLayout>
+			</RelativeLayout>
+		</ScrollView>
+    </com.kdkj.koudailicai.lib.ui.pulltorefresh.PullToRefreshScrollView>
+    <!-- com.kdkj.koudailicai.lib.ui.pulltorefresh.PullToRefresh -->
+	<RelativeLayout
+	    android:id="@+id/investBtnView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="80dp"
+	    android:visibility="invisible"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/global_white_color" >
+		<View
+	       	android:layout_width="fill_parent"
+	       	android:layout_height="@dimen/divide_line_height"
+	       	android:layout_alignParentTop="true"
+	       	android:background="@color/selfcenter_divide_line_color" />
+		<TextView
+	        android:id="@+id/investBtn"
+	        android:layout_height="60dp"
+	        android:layout_width="fill_parent"
+	        android:layout_centerVertical="true"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:background="@drawable/btn_red_background"        
+	        android:text="@string/kdbdetail_invest_btn_text"
+	        android:textColor="@color/global_white_color"
+	        android:textSize="@dimen/kdbdetail_invest_btn_text_size" />
+    </RelativeLayout>
+    <include
+        android:id="@+id/errNetLayout"
+    	android:layout_below="@id/title"        
+   		android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/global_back_black_color" 
+	    android:visibility="gone"       
+        layout="@layout/network_disabled" />    		
+</RelativeLayout>
